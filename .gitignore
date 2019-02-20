@@ -1,0 +1,6 @@
+config.swift
+Tempo/config.swift
+*.DS_Store
+*Tempo.xcdatamodeld*
+*~
+Pod*
