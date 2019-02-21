@@ -72,8 +72,8 @@
 		6C5F86F9221929D1000EA110 /* Tempo */ = {
 			isa = PBXGroup;
 			children = (
+				8EC1C70B221E99740065ECE0 /* SupportingFiles */,
 				6C5F86FA221929D1000EA110 /* AppDelegate.swift */,
-				6C48FB65221D161F002D33E6 /* configTemplate.swift */,
 				6C5F86FC221929D1000EA110 /* ViewController.swift */,
 				6C5F86FE221929D1000EA110 /* Main.storyboard */,
 				6C5F8704221929D6000EA110 /* Assets.xcassets */,
@@ -81,6 +81,14 @@
 				6C5F8709221929D6000EA110 /* Info.plist */,
 			);
 			path = Tempo;
+			sourceTree = "<group>";
+		};
+		8EC1C70B221E99740065ECE0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6C48FB65221D161F002D33E6 /* configTemplate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		BEE9FBF84A45A16B1828B5CF /* Frameworks */ = {
