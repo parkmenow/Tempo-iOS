@@ -1,0 +1,9 @@
+config.swift
+Tempo/config.swift
+*.DS_Store
+*Tempo.xcdatamodeld*
+*~
+Pods*
+*.xcworkspace
+*.lock
+*xcuserdata*
