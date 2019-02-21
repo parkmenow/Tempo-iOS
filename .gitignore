@@ -1,9 +1,5 @@
 
 *.DS_Store
-*Tempo.xcdatamodeld*
-*~
 Pods/
 *.lock
-*xcuserdata*
-Tempo/globalConfig.swift
-Tempo/configTemplate.swift
+Tempo/SupportingFiles/
