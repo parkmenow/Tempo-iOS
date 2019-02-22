@@ -37,7 +37,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-        var url = "https://tempobackend.herokuapp.com/api/v1/"
+//        var url = "https://tempobackend.herokuapp.com/api/v1/"
         //        get(url: url, successHandler: getTestHandler)
         //        post(url: url, params: "{\"name\":\"ni\"}", successHandler: postTestHandler)
         
@@ -57,7 +57,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             {
                 for json in jsonArray{
                     let marker = GMSMarker()
-                    print("latitude:",json["latitude"])
+                    print("latitude:",json["latitude"]!)
                     let latitude = CLLocationDegrees((json["latitude"] as! NSString).floatValue)
                     let longitude = CLLocationDegrees((json["longitude"] as! NSString).floatValue)
                     marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -95,7 +95,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.confirmButton.setTitleColor(UIColor.blue, for: [])
             //        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
             self.confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-150, width: 300, height: 150)
-            self.confirmButton.addTarget(self, action: "confirmRoutePressed:", for: .touchUpInside)
+            self.confirmButton.addTarget(self, action: #selector(MapViewController.confirmRoutePressed(_:)), for: .touchUpInside)
             
             self.view.addSubview(self.confirmButton)
         })
@@ -129,7 +129,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     //MARK:- Get Taxi
     func getRide(){
         
-        let currentLoc = getUserLocation()
+//        let currentLoc = getUserLocation()
         let url = "https://tempobackend.herokuapp.com/api/v1/ride?routeid=\(self.selectedRouteID)"
         print("url:",url)
         return get(url: url, successHandler: getRideResponseHandler)
@@ -164,7 +164,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.confirmButton.setTitleColor(UIColor.blue, for: [])
             //        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
             self.confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-300, width: 300, height: 300)
-            self.confirmButton.addTarget(self, action: "confirmTaxiPressed:", for: .touchUpInside)
+            self.confirmButton.addTarget(self, action: #selector(MapViewController.confirmTaxiPressed(_:)), for: .touchUpInside)
             
             self.view.addSubview(self.confirmButton)
         })
@@ -205,7 +205,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             //CALL next payment view controller
             print("The response is")
             let json = JSON(stringLiteral: response)
-            
+            print("json")
+            print(json)
             
             self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID))
         }
@@ -275,13 +276,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             
             
             let points = route
-            let path = GMSPath.init(fromEncodedPath: points as! String)
+            let path = GMSPath.init(fromEncodedPath: points )
             let taxiRouteLine = GMSPolyline.init(path: path)
             taxiRouteLine.strokeWidth = 3
-            
-            let bounds = GMSCoordinateBounds(path: path!)
-            //            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
-            
+//
+//            let bounds = GMSCoordinateBounds(path: path!)
+//            //            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
+//
             taxiRouteLine.map = self.mapView
             self.taxiRouteLines.append(taxiRouteLine)
             
@@ -377,12 +378,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
     
     func loadUserLocation(){
-        var currentLoc = getUserLocation()
+        let currentLoc = getUserLocation()
         let camera = GMSCameraPosition.camera(withLatitude: currentLoc.latitude, longitude: currentLoc.longitude, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.settings.myLocationButton = true
         
-        mapView.delegate = self as! GMSMapViewDelegate
+        mapView.delegate = self as GMSMapViewDelegate
         
         self.view = mapView
         
@@ -443,7 +444,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         confirmButton.setTitleColor(UIColor.blue, for: [])
         //        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
         confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-100, width: 300, height: 100)
-        confirmButton.addTarget(self, action: "destinationCheckButtonPressed:", for: .touchUpInside)
+        confirmButton.addTarget(self, action: #selector(MapViewController.destinationCheckButtonPressed(_:)), for: .touchUpInside)
         
         self.view.addSubview(confirmButton)
         return false
