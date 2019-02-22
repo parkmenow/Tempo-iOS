@@ -35,7 +35,7 @@ class PaymentViewController: UIViewController {
     var bookTime : String = ""
     var cost : String = ""
     var payByCard : Bool = false
-    
+    var booking = Booking()
     
     @IBAction func payNowButtonPressed(_ sender: Any) {
         

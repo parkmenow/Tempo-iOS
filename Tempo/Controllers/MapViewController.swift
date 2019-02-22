@@ -126,17 +126,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     var selectedRouteID = 0
     
     
-    //MARK:- Get Taxi
+//MARK:- Get Taxi
     func getRide(){
-        
-//        let currentLoc = getUserLocation()
         let url = "https://tempobackend.herokuapp.com/api/v1/ride?routeid=\(self.selectedRouteID)"
         print("url:",url)
         return get(url: url, successHandler: getRideResponseHandler)
     }
     
     func getRideResponseHandler (_ response: String) -> Void{
-        print(response)
         let data = response.data(using: .utf8)!
         do {
             if let taxiDict = try JSONSerialization.jsonObject(with: data, options : .allowFragments) as? Dictionary<String,Any>
@@ -208,19 +205,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             print("json")
             print(json)
             
-            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID))
+            book = parseBooking(json: response.data(using: .utf8) as! Data)
+            
+            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID),with: book )
         }
         
     }
-    //MARK:- Call to PAyment View Controller
-    func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String ){
+//MARK:- Call to Payment View Controller
+    func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String, with booking: Booking ){
 
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
         
         vc.user = user
         vc.taxi = taxi
         vc.cost = price
-        
+        vc.booking = booking
         
         let date = Date()
         let calendar = Calendar.current
@@ -228,8 +227,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         let minutes = calendar.component(.minute, from: date)
         let time = String(hour) + ":" + String(minutes)
         vc.bookTime = time
-        
-//        self.navigationController?.pushViewController(vc, animated: true)
             self.present(vc, animated: true, completion: nil)
     }
     
@@ -269,20 +266,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     func plotRoute(route: String){
         OperationQueue.main.addOperation({
-            //            self.mapView.clear()
-            //            self.reloadUserAndNearbyTaxi()
-            
-            //            let routeOverviewPolyline:NSDictionary = (route as! NSDictionary).value(forKey: "overview_polyline") as! NSDictionary
-            
-            
             let points = route
             let path = GMSPath.init(fromEncodedPath: points )
             let taxiRouteLine = GMSPolyline.init(path: path)
             taxiRouteLine.strokeWidth = 3
-//
-//            let bounds = GMSCoordinateBounds(path: path!)
-//            //            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
-//
             taxiRouteLine.map = self.mapView
             self.taxiRouteLines.append(taxiRouteLine)
             
@@ -400,10 +387,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
     
     override func loadView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        
-        
         loadUserLocation()
     }
     
