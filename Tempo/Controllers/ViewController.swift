@@ -41,7 +41,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         
         getNearbyTaxis()
     
-        addLoadingIndicator()
+//        addLoadingIndicator()
     }
     
     func addLoadingIndicator(){
@@ -140,7 +140,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     
     var selectedRouteID = 0
     
+    
+    //MARK:- Get Taxi
     func getRide(){
+        
         let currentLoc = getUserLocation()
         let url = "https://tempobackend.herokuapp.com/api/v1/ride?routeid=\(self.selectedRouteID)"
         print("url:",url)
@@ -214,11 +217,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         print("postTestHandler: ",response)
         
         DispatchQueue.main.async {
+            //CALL next payment view controller
+            
+            
+
+            
+            
             let alertController = UIAlertController(title: "Booking completed", message: "Your booking info:\n\(response)", preferredStyle: .alert)
+            
+            print(response)
+            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID))
             
             let okAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default) {
                 UIAlertAction in
                 NSLog("OK Pressed")
+                
                 //            self.confirmButton.removeFromSuperview()
             }
             
@@ -228,6 +241,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         }
         
     }
+       //MARK- Call to PAyment View Controller
+    func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String ){
+   
+        
+        
+        let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
+        
+        vc.user = user
+        vc.taxi = taxi
+        vc.cost = price
+        
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let time = String(hour) + ":" + String(minutes)
+        vc.bookTime = time
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    var fare = 0
     
     func getRouteResponseHandler (_ response_: String) -> Void{
         let response = "[" + response_ + "]"
@@ -237,7 +274,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             {
                 var distance = 0
                 var duration = 0
-                var fare = 0
+                
                 for json in jsons{
                     let googlePaths = json["GooglePath"] as! NSArray
                     for googlePath in googlePaths{
@@ -408,7 +445,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        if destinationCoordinate == nil{
+        if destinationCoordinate == nil {
             print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
             let position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
             destinationCoordinate = GMSMarker(position: position)
