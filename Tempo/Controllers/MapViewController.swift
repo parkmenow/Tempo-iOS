@@ -108,7 +108,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             UIAlertAction in
             NSLog("OK Pressed")
             let rideResponse = self.getRide()
-//            print(rideResponse)
+            print(rideResponse)
             self.confirmButton.removeFromSuperview()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
@@ -200,14 +200,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         DispatchQueue.main.async {
             //CALL next payment view controller
-            print("The response is")
-            let json = JSON(stringLiteral: response)
-            print("json")
-            print(json)
             
-            book = parseBooking(json: response.data(using: .utf8) as! Data)
+            let booki = parseBooking(json: response.data(using: .utf8)!)
+            print("Parsed json as : ")
+            print(booki)
             
-            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID),with: book )
+            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID),with: booki )
         }
         
     }
