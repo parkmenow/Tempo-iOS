@@ -1,15 +1,18 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  Tempo
 //
-//  Created by shitian.ni on 2019/02/17.
+//  Created by bharath on 2019/02/22.
 //  Copyright © 2019 shitian.ni. All rights reserved.
 //
 
 import UIKit
 import GoogleMaps
+import Alamofire
+import SwiftyJSON
 
-class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
+
+class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     var ActivityIndicator: UIActivityIndicatorView!
     
@@ -22,7 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
+        
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -34,27 +37,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-//        var url = "https://tempobackend.herokuapp.com/api/v1/"
-//        get(url: url, successHandler: getTestHandler)
-//        post(url: url, params: "{\"name\":\"ni\"}", successHandler: postTestHandler)
+        var url = "https://tempobackend.herokuapp.com/api/v1/"
+        //        get(url: url, successHandler: getTestHandler)
+        //        post(url: url, params: "{\"name\":\"ni\"}", successHandler: postTestHandler)
         
         getNearbyTaxis()
-
-    }
-    
-    func addLoadingIndicator(){
-        ActivityIndicator = UIActivityIndicatorView()
-        ActivityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        ActivityIndicator.center = self.view.center
-        
-        // クルクルをストップした時に非表示する
-        ActivityIndicator.hidesWhenStopped = true
-        
-        // 色を設定
-        ActivityIndicator.style = UIActivityIndicatorView.Style.gray
-        
-        //Viewに追加
-        self.view.addSubview(ActivityIndicator)
     }
     
     func getNearbyTaxis(){
@@ -121,7 +108,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             UIAlertAction in
             NSLog("OK Pressed")
             let rideResponse = self.getRide()
-            print(rideResponse)
+//            print(rideResponse)
             self.confirmButton.removeFromSuperview()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
@@ -216,34 +203,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         
         DispatchQueue.main.async {
             //CALL next payment view controller
+            print("The response is")
+            let json = JSON(stringLiteral: response)
             
             
-
-            
-            
-            let alertController = UIAlertController(title: "Booking completed", message: "Your booking info:\n\(response)", preferredStyle: .alert)
-            
-            print(response)
             self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID))
-            
-            let okAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default) {
-                UIAlertAction in
-                NSLog("OK Pressed")
-                
-                //            self.confirmButton.removeFromSuperview()
-            }
-            
-            alertController.addAction(okAction)
-            
-            self.present(alertController, animated: true, completion: nil)
         }
         
     }
-       //MARK- Call to PAyment View Controller
+    //MARK:- Call to PAyment View Controller
     func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String ){
-   
-        
-        
+
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
         
         vc.user = user
@@ -258,8 +228,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         let time = String(hour) + ":" + String(minutes)
         vc.bookTime = time
         
-        self.navigationController?.pushViewController(vc, animated: true)
-        
+//        self.navigationController?.pushViewController(vc, animated: true)
+            self.present(vc, animated: true, completion: nil)
     }
     
     var fare = 0
@@ -298,10 +268,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     
     func plotRoute(route: String){
         OperationQueue.main.addOperation({
-//            self.mapView.clear()
-//            self.reloadUserAndNearbyTaxi()
-           
-//            let routeOverviewPolyline:NSDictionary = (route as! NSDictionary).value(forKey: "overview_polyline") as! NSDictionary
+            //            self.mapView.clear()
+            //            self.reloadUserAndNearbyTaxi()
+            
+            //            let routeOverviewPolyline:NSDictionary = (route as! NSDictionary).value(forKey: "overview_polyline") as! NSDictionary
             
             
             let points = route
@@ -310,11 +280,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             taxiRouteLine.strokeWidth = 3
             
             let bounds = GMSCoordinateBounds(path: path!)
-//            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
+            //            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
             
             taxiRouteLine.map = self.mapView
             self.taxiRouteLines.append(taxiRouteLine)
-                
+            
         })
     }
     
@@ -338,7 +308,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         loadUserLocation()
         getNearbyTaxis()
     }
-
+    
     func postTestHandler (_ response: String) -> Void{
         print("postTestHandler: ",response)
         
@@ -400,7 +370,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         }
         task.resume();
     }
-
+    
     func postUserLocations(){
         
         
@@ -471,7 +441,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         confirmButton.backgroundColor = UIColor.white
         confirmButton.setTitle("Tap to confirm destination", for: [])
         confirmButton.setTitleColor(UIColor.blue, for: [])
-//        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
+        //        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
         confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-100, width: 300, height: 100)
         confirmButton.addTarget(self, action: "destinationCheckButtonPressed:", for: .touchUpInside)
         
@@ -487,7 +457,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             NSLog("OK Pressed")
             let routeResponse = self.getRoute()
             print(routeResponse)
-//            self.confirmButton.removeFromSuperview()
+            //            self.confirmButton.removeFromSuperview()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
             UIAlertAction in
@@ -499,6 +469,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         alertController.addAction(cancelAction)
         
         self.present(alertController, animated: true, completion: nil)
-
+        
     }
 }
+

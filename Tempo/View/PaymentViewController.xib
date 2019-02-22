@@ -143,25 +143,19 @@
                     <rect key="frame" x="16" y="430" width="343" height="61"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-6E-CL7">
-                            <rect key="frame" x="3.5" y="15" width="336" height="31"/>
+                            <rect key="frame" x="54" y="15" width="235.5" height="31"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJV-pp-NCy">
-                                    <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="AJV-pp-NCy" secondAttribute="height" multiplier="49:15" constant="-15" id="bDa-Fv-Vz9"/>
-                                    </constraints>
+                                    <rect key="frame" x="0.0" y="0.0" width="47.5" height="31"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-3w-qWn">
-                                    <rect key="frame" x="137" y="0.0" width="51" height="31"/>
+                                    <rect key="frame" x="98.5" y="0.0" width="51" height="31"/>
                                 </switch>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l86-Cs-6bO">
-                                    <rect key="frame" x="237" y="0.0" width="99" height="31"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="l86-Cs-6bO" secondAttribute="height" multiplier="16:5" id="4Ue-xw-3JY"/>
-                                    </constraints>
+                                    <rect key="frame" x="198.5" y="0.0" width="37" height="31"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
