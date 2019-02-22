@@ -37,3 +37,5 @@ func parseBooking(json: Data) ->Booking {
     }
     
 }
+
+

@@ -19,11 +19,8 @@ class PaymentViewController: UIViewController {
         self.payTime.text = bookTime
         self.costLabel.text = cost + ""
         self.payMethodSwitch.isOn = payByCard
-
-        
     }
     
-    //
     @IBOutlet weak var userIdentifier: UILabel!
     @IBOutlet weak var taxiIdentifier: UILabel!
     @IBOutlet weak var payTime: UILabel!

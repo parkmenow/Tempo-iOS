@@ -20,29 +20,28 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     var destinationCoordinate: GMSMarker!
     var mapView: GMSMapView!
+    var riderID = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
+        locationManagerInit()
+        getNearbyTaxis()
+    }
+    
+    
+    func locationManagerInit(){
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
-        
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
-        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-//        var url = "https://tempobackend.herokuapp.com/api/v1/"
-        //        get(url: url, successHandler: getTestHandler)
-        //        post(url: url, params: "{\"name\":\"ni\"}", successHandler: postTestHandler)
-        
-        getNearbyTaxis()
     }
+    
     
     func getNearbyTaxis(){
         let currentLoc = getUserLocation()
@@ -157,12 +156,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.confirmButton.titleLabel!.lineBreakMode = .byWordWrapping
             // you probably want to center it
             self.confirmButton.titleLabel!.textAlignment = .center
-            
             self.confirmButton.setTitleColor(UIColor.blue, for: [])
-            //        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
             self.confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-300, width: 300, height: 300)
             self.confirmButton.addTarget(self, action: #selector(MapViewController.confirmTaxiPressed(_:)), for: .touchUpInside)
-            
             self.view.addSubview(self.confirmButton)
         })
     }
@@ -188,8 +184,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         self.present(alertController, animated: true, completion: nil)
     }
-    var riderID = 0
-    
+
     func book(){
         let url = "https://tempobackend.herokuapp.com/api/v1/bookingConfirmation/?riderid=\(riderID)&routeid=\(selectedRouteID)&taxiid=\(self.taxiID)"
         post(url: url, params: "", successHandler: bookingHandler)
@@ -270,7 +265,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             taxiRouteLine.strokeWidth = 3
             taxiRouteLine.map = self.mapView
             self.taxiRouteLines.append(taxiRouteLine)
-            
         })
     }
     
@@ -278,10 +272,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     func getTestHandler (_ response: String) -> Void{
         print(response)
-        
         DispatchQueue.main.async {
             let textView = UITextView(frame: CGRect(x: 120.0, y: 190.0, width: 350.0, height: 300.0))
-            
             textView.textAlignment = NSTextAlignment.center
             textView.textColor = UIColor.black
             textView.backgroundColor = UIColor.white
@@ -297,17 +289,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     func postTestHandler (_ response: String) -> Void{
         print("postTestHandler: ",response)
-        
         DispatchQueue.main.async {
             let textView = UITextView(frame: CGRect(x: 120.0, y: 190.0, width: 350.0, height: 300.0))
-            
             textView.textAlignment = NSTextAlignment.center
             textView.textColor = UIColor.black
             textView.backgroundColor = UIColor.white
             textView.text = response
             self.view.addSubview(textView)
         }
-        
     }
     
     func getUserLocation() -> CLLocationCoordinate2D{
@@ -324,7 +313,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) {
             data, response, error in
-            
             //in case of error
             if error != nil {
                 return
@@ -367,18 +355,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         let camera = GMSCameraPosition.camera(withLatitude: currentLoc.latitude, longitude: currentLoc.longitude, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.settings.myLocationButton = true
-        
         mapView.delegate = self as GMSMapViewDelegate
-        
         self.view = mapView
-        
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-        
         let user = UIImage(named: "user")!.withRenderingMode(.alwaysTemplate)
         marker.tracksViewChanges = true
         marker.icon = user
-        
         marker.position = CLLocationCoordinate2D(latitude: currentLoc.latitude, longitude: currentLoc.longitude)
         marker.title = "Your location"
         marker.map = mapView

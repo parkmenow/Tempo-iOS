@@ -32,12 +32,36 @@
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8E-2y-WgS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZB-vd-3If">
+                                <rect key="frame" x="75" y="238" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="Nha-kA-Qw6"/>
+                                    <constraint firstAttribute="height" constant="30" id="weH-wK-Euf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5p2-GP-vPl">
+                                <rect key="frame" x="75" y="302" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="In5-Ob-rk5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="bfX-ES-DZN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rZB-vd-3If" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="F4t-9w-ezP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pzx-oX-Swz" secondAttribute="bottom" constant="10" id="KAW-cJ-GSk"/>
                             <constraint firstItem="Pzx-oX-Swz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U0J-Mm-Z2z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pzx-oX-Swz" secondAttribute="trailing" id="ebe-7q-xen"/>
+                            <constraint firstItem="5p2-GP-vPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faP-Xk-CBI"/>
+                            <constraint firstItem="5p2-GP-vPl" firstAttribute="top" secondItem="rZB-vd-3If" secondAttribute="bottom" constant="34" id="hlt-fC-kpe"/>
+                            <constraint firstItem="rZB-vd-3If" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kCo-7s-xYf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -42,21 +42,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
 
     }
     
-    func addLoadingIndicator(){
-        ActivityIndicator = UIActivityIndicatorView()
-        ActivityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        ActivityIndicator.center = self.view.center
-        
-        // クルクルをストップした時に非表示する
-        ActivityIndicator.hidesWhenStopped = true
-        
-        // 色を設定
-        ActivityIndicator.style = UIActivityIndicatorView.Style.gray
-        
-        //Viewに追加
-        self.view.addSubview(ActivityIndicator)
-    }
-    
     func getNearbyTaxis(){
         let currentLoc = getUserLocation()
         let url = "https://tempobackend.herokuapp.com/api/v1/nearbytaxis?latitude=\(currentLoc.latitude)&longitude=\(currentLoc.longitude)"
@@ -104,9 +89,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             self.confirmButton.titleLabel!.lineBreakMode = .byWordWrapping
             // you probably want to center it
             self.confirmButton.titleLabel!.textAlignment = .center
-            
             self.confirmButton.setTitleColor(UIColor.blue, for: [])
-            //        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
             self.confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-150, width: 300, height: 150)
             self.confirmButton.addTarget(self, action: "confirmRoutePressed:", for: .touchUpInside)
             
@@ -129,10 +112,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             NSLog("Cancel Pressed")
             self.confirmButton.removeFromSuperview()
         }
-        
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
-        
         self.present(alertController, animated: true, completion: nil)
     }
     
@@ -216,11 +197,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         
         DispatchQueue.main.async {
             //CALL next payment view controller
-            
-            
-
-            
-            
             let alertController = UIAlertController(title: "Booking completed", message: "Your booking info:\n\(response)", preferredStyle: .alert)
             
             print(response)
@@ -229,37 +205,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             let okAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default) {
                 UIAlertAction in
                 NSLog("OK Pressed")
-                
-                //            self.confirmButton.removeFromSuperview()
             }
-            
             alertController.addAction(okAction)
-            
             self.present(alertController, animated: true, completion: nil)
         }
         
     }
        //MARK- Call to PAyment View Controller
     func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String ){
-   
-        
-        
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
-        
         vc.user = user
         vc.taxi = taxi
         vc.cost = price
-        
-        
         let date = Date()
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         let time = String(hour) + ":" + String(minutes)
         vc.bookTime = time
-        
         self.navigationController?.pushViewController(vc, animated: true)
-        
     }
     
     var fare = 0
@@ -298,20 +262,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     
     func plotRoute(route: String){
         OperationQueue.main.addOperation({
-//            self.mapView.clear()
-//            self.reloadUserAndNearbyTaxi()
-           
-//            let routeOverviewPolyline:NSDictionary = (route as! NSDictionary).value(forKey: "overview_polyline") as! NSDictionary
-            
             
             let points = route
             let path = GMSPath.init(fromEncodedPath: points as! String)
             let taxiRouteLine = GMSPolyline.init(path: path)
             taxiRouteLine.strokeWidth = 3
-            
             let bounds = GMSCoordinateBounds(path: path!)
-//            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
-            
             taxiRouteLine.map = self.mapView
             self.taxiRouteLines.append(taxiRouteLine)
                 
@@ -429,18 +385,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     }
     
     override func loadView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        
-        
+  
         loadUserLocation()
     }
-//
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-//        print("locations = \(locValue.latitude) \(locValue.longitude)")
-//    }
-//
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         if destinationCoordinate == nil {
@@ -471,7 +418,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         confirmButton.backgroundColor = UIColor.white
         confirmButton.setTitle("Tap to confirm destination", for: [])
         confirmButton.setTitleColor(UIColor.blue, for: [])
-//        let buttonCoordinate = CGRect(x: 10, y: 10, width: 300, height: 300)
         confirmButton.frame = CGRect(x: self.view.frame.width/2-150, y: self.view.frame.height-100, width: 300, height: 100)
         confirmButton.addTarget(self, action: "destinationCheckButtonPressed:", for: .touchUpInside)
         
@@ -486,8 +432,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             UIAlertAction in
             NSLog("OK Pressed")
             let routeResponse = self.getRoute()
+            print("In destination Check Button Pressed")
             print(routeResponse)
-//            self.confirmButton.removeFromSuperview()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
             UIAlertAction in
