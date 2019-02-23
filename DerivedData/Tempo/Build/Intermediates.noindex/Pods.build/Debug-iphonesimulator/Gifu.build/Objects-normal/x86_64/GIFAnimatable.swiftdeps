@@ -1,0 +1,454 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GIFAnimatable"
+- "ImageContainer"
+provides-nominal:
+- "4Gifu13GIFAnimatableP"
+- "4Gifu14ImageContainerP"
+provides-member:
+- ["4Gifu13GIFAnimatableP", ""]
+- ["4Gifu14ImageContainerP", ""]
+- ["4Gifu13GIFAnimatableP", "intrinsicContentSize"]
+- ["4Gifu13GIFAnimatableP", "gifLoopDuration"]
+- ["4Gifu13GIFAnimatableP", "activeFrame"]
+- ["4Gifu13GIFAnimatableP", "frameCount"]
+- ["4Gifu13GIFAnimatableP", "isAnimatingGIF"]
+- ["4Gifu13GIFAnimatableP", "animate"]
+- ["4Gifu13GIFAnimatableP", "animate"]
+- ["4Gifu13GIFAnimatableP", "animate"]
+- ["4Gifu13GIFAnimatableP", "prepareForAnimation"]
+- ["4Gifu13GIFAnimatableP", "prepareForAnimation"]
+- ["4Gifu13GIFAnimatableP", "prepareForAnimation"]
+- ["4Gifu13GIFAnimatableP", "prepareForReuse"]
+- ["4Gifu13GIFAnimatableP", "startAnimatingGIF"]
+- ["4Gifu13GIFAnimatableP", "stopAnimatingGIF"]
+- ["4Gifu13GIFAnimatableP", "setShouldResizeFrames"]
+- ["4Gifu13GIFAnimatableP", "setFrameBufferCount"]
+- ["4Gifu13GIFAnimatableP", "updateImageIfNeeded"]
+- ["4Gifu13GIFAnimatableP", "animatorHasNewFrame"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "??"
+- "Animator"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CALayer"
+- "CGRect"
+- "CGSize"
+- "CastingPrecedence"
+- "Data"
+- !private "DispatchQueue"
+- !private "FloatLiteralType"
+- "GIFAnimatable"
+- "ImageContainer"
+- "Int"
+- !private "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "TimeInterval"
+- "UIImage"
+- "UIView"
+- "URL"
+- !private "URLSession"
+- "Void"
+- !private "print"
+depends-member:
+- !private ["4Gifu8AnimatorC", "activeFrame"]
+- !private ["4Gifu8AnimatorC", "animate"]
+- !private ["4Gifu8AnimatorC", "frameBufferCount"]
+- !private ["4Gifu8AnimatorC", "frameCount"]
+- !private ["4Gifu8AnimatorC", "isAnimating"]
+- !private ["4Gifu8AnimatorC", "loopDuration"]
+- !private ["4Gifu8AnimatorC", "prepareForAnimation"]
+- !private ["4Gifu8AnimatorC", "prepareForReuse"]
+- !private ["4Gifu8AnimatorC", "shouldResizeFrames"]
+- !private ["4Gifu8AnimatorC", "startAnimating"]
+- !private ["4Gifu8AnimatorC", "stopAnimating"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["So7CALayerC", "contents"]
+- !private ["So7CALayerC", "setNeedsDisplay"]
+- ["So15CALayerDelegateP", "ContentMode"]
+- !private ["So13CAMediaTimingP", "contents"]
+- !private ["So13CAMediaTimingP", "setNeedsDisplay"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "zero"]
+- ["s7CVarArgP", "ContentMode"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "cgImage"]
+- !private ["s7CVarArgP", "contents"]
+- !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "setNeedsDisplay"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "size"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "ContentMode"]
+- !private ["s28CustomDebugStringConvertibleP", "absoluteString"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "cgImage"]
+- !private ["s28CustomDebugStringConvertibleP", "contents"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "setNeedsDisplay"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s29CustomPlaygroundQuickLookableP", "absoluteString"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "zero"]
+- ["s23CustomStringConvertibleP", "ContentMode"]
+- !private ["s23CustomStringConvertibleP", "absoluteString"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "cgImage"]
+- !private ["s23CustomStringConvertibleP", "contents"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "setNeedsDisplay"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "size"]
+- !private ["Se", "absoluteString"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "none"]
+- !private ["Se", "size"]
+- !private ["Se", "zero"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "absoluteString"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "none"]
+- !private ["SE", "size"]
+- !private ["SE", "zero"]
+- ["SQ", "ContentMode"]
+- !private ["SQ", "absoluteString"]
+- !private ["SQ", "async"]
+- !private ["SQ", "cgImage"]
+- !private ["SQ", "contents"]
+- !private ["SQ", "dataTask"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "main"]
+- !private ["SQ", "none"]
+- !private ["SQ", "resume"]
+- !private ["SQ", "setNeedsDisplay"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "size"]
+- !private ["SQ", "zero"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["4Gifu13GIFAnimatableP", "Animator"]
+- ["4Gifu13GIFAnimatableP", "Bool"]
+- ["4Gifu13GIFAnimatableP", "CALayer"]
+- ["4Gifu13GIFAnimatableP", "CGRect"]
+- ["4Gifu13GIFAnimatableP", "CGSize"]
+- ["4Gifu13GIFAnimatableP", "Data"]
+- !private ["4Gifu13GIFAnimatableP", "DispatchQueue"]
+- ["4Gifu13GIFAnimatableP", "ImageContainer"]
+- ["4Gifu13GIFAnimatableP", "Int"]
+- ["4Gifu13GIFAnimatableP", "String"]
+- ["4Gifu13GIFAnimatableP", "TimeInterval"]
+- ["4Gifu13GIFAnimatableP", "UIImage"]
+- ["4Gifu13GIFAnimatableP", "UIView"]
+- ["4Gifu13GIFAnimatableP", "URL"]
+- !private ["4Gifu13GIFAnimatableP", "URLSession"]
+- ["4Gifu13GIFAnimatableP", "Void"]
+- ["4Gifu13GIFAnimatableP", "activeFrame"]
+- ["4Gifu13GIFAnimatableP", "animate"]
+- ["4Gifu13GIFAnimatableP", "animator"]
+- ["4Gifu13GIFAnimatableP", "animatorHasNewFrame"]
+- ["4Gifu13GIFAnimatableP", "contentMode"]
+- ["4Gifu13GIFAnimatableP", "frame"]
+- ["4Gifu13GIFAnimatableP", "frameCount"]
+- ["4Gifu13GIFAnimatableP", "gifLoopDuration"]
+- !private ["4Gifu13GIFAnimatableP", "image"]
+- ["4Gifu13GIFAnimatableP", "intrinsicContentSize"]
+- ["4Gifu13GIFAnimatableP", "isAnimatingGIF"]
+- ["4Gifu13GIFAnimatableP", "layer"]
+- ["4Gifu13GIFAnimatableP", "prepareForAnimation"]
+- ["4Gifu13GIFAnimatableP", "prepareForReuse"]
+- !private ["4Gifu13GIFAnimatableP", "print"]
+- ["4Gifu13GIFAnimatableP", "setFrameBufferCount"]
+- ["4Gifu13GIFAnimatableP", "setShouldResizeFrames"]
+- ["4Gifu13GIFAnimatableP", "startAnimatingGIF"]
+- ["4Gifu13GIFAnimatableP", "stopAnimatingGIF"]
+- ["4Gifu13GIFAnimatableP", "updateImageIfNeeded"]
+- ["SH", "ContentMode"]
+- !private ["SH", "absoluteString"]
+- !private ["SH", "async"]
+- !private ["SH", "cgImage"]
+- !private ["SH", "contents"]
+- !private ["SH", "dataTask"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "main"]
+- !private ["SH", "none"]
+- !private ["SH", "resume"]
+- !private ["SH", "setNeedsDisplay"]
+- !private ["SH", "shared"]
+- !private ["SH", "size"]
+- ["4Gifu14ImageContainerP", "CGSize"]
+- ["4Gifu14ImageContainerP", "UIImage"]
+- ["4Gifu14ImageContainerP", "image"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "ContentMode"]
+- !private ["So8NSCodingP", "cgImage"]
+- !private ["So8NSCodingP", "contents"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "setNeedsDisplay"]
+- !private ["So8NSCodingP", "size"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So21NSItemProviderReadingP", "cgImage"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "size"]
+- !private ["So21NSItemProviderWritingP", "cgImage"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "size"]
+- ["So8NSObjectC", "ContentMode"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "cgImage"]
+- !private ["So8NSObjectC", "contents"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "setNeedsDisplay"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "size"]
+- ["So8NSObjectP", "ContentMode"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "contents"]
+- !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "setNeedsDisplay"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "size"]
+- !private ["So14NSSecureCodingP", "cgImage"]
+- !private ["So14NSSecureCodingP", "contents"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "setNeedsDisplay"]
+- !private ["So14NSSecureCodingP", "size"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["Sq", "none"]
+- !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["So29UIAccessibilityIdentificationP", "ContentMode"]
+- !private ["So29UIAccessibilityIdentificationP", "cgImage"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "size"]
+- ["So12UIAppearanceP", "ContentMode"]
+- ["So21UIAppearanceContainerP", "ContentMode"]
+- ["So17UICoordinateSpaceP", "ContentMode"]
+- ["So13UIDynamicItemP", "ContentMode"]
+- ["So18UIFocusEnvironmentP", "ContentMode"]
+- ["So11UIFocusItemP", "ContentMode"]
+- ["So20UIFocusItemContainerP", "ContentMode"]
+- !private ["So7UIImageC", "cgImage"]
+- !private ["So7UIImageC", "init"]
+- !private ["So7UIImageC", "size"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "cgImage"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
+- ["So30UIPasteConfigurationSupportingP", "ContentMode"]
+- ["So11UIResponderC", "ContentMode"]
+- ["So30UIResponderStandardEditActionsP", "ContentMode"]
+- ["So18UITraitEnvironmentP", "ContentMode"]
+- ["So23UIUserActivityRestoringP", "ContentMode"]
+- ["So6UIViewC", "ContentMode"]
+- !private ["10Foundation3URLV", "absoluteString"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- !private ["So12NSURLSessionC", "shared"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "ContentMode"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "absoluteString"]
+- !private ["s26_ExpressibleByImageLiteralP", "cgImage"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "size"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ContentMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNeedsDisplay"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "absoluteString"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "4Gifu8AnimatorC"
+- !private "SK"
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "4Gifu13GIFAnimatableP"
+- "SH"
+- "4Gifu14ImageContainerP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So9OS_objectC"
+- !private "Sq"
+- !private "So19NSProgressReportingP"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- !private "10Foundation3URLV"
+- !private "So12NSURLSessionC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Target Support Files/Gifu/Gifu-umbrella.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Gifu.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Gifu.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c78c25a955e8625d2cb64daf5eed0f11"

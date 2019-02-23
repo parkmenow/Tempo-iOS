@@ -20,10 +20,16 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginPressed(_ sender: UIButton) {
         print("Login Pressed")
+//       instantiateDashboard()
+    }
+    
+    func instantiateDashboard(){
         let vc = MapViewController(nibName: "MapViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+
 
 
 

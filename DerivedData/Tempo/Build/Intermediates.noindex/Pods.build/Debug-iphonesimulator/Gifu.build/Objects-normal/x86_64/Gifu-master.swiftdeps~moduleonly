@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "9eb78b1d5d9799a9f2f790c76980a5e8"
+build_time: [1550900304, 678673000]
+inputs:
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Classes/AnimatedFrame.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Classes/Animator.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Extensions/Array.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Extensions/CGSize.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Classes/FrameStore.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Classes/GIFAnimatable.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Classes/GIFImageView.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Helpers/ImageSourceHelpers.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Extensions/UIImage.swift": [1550894177, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Extensions/UIImageView.swift": [1550894177, 0]

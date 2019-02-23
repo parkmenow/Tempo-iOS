@@ -1,0 +1,565 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FrameStore"
+provides-nominal:
+- "4Gifu10FrameStoreC"
+provides-member:
+- ["4Gifu10FrameStoreC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "%"
+- !private "&&"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "..."
+- !private "..<"
+- !private "<"
+- !private "=="
+- !private ">"
+- !private ">="
+- !private "??"
+- "AnimatedFrame"
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "CFData"
+- !private "CFDictionary"
+- "CFTimeInterval"
+- !private "CGImageFrameDuration"
+- "CGImageSource"
+- !private "CGImageSourceCreateImageAtIndex"
+- !private "CGImageSourceCreateIncremental"
+- !private "CGImageSourceCreateWithData"
+- !private "CGImageSourceGetCount"
+- "CGSize"
+- "CastingPrecedence"
+- "Data"
+- !private "Dictionary"
+- "DispatchQueue"
+- "FloatLiteralType"
+- "FrameStore"
+- "Int"
+- "IntegerLiteralType"
+- !private "String"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "UIImage"
+- "UIView"
+- "Void"
+- !private "kCFBooleanFalse"
+- !private "kCGImageSourceShouldCache"
+- !private "min"
+depends-member:
+- !private ["4Gifu13AnimatedFrameV", "duration"]
+- !private ["4Gifu13AnimatedFrameV", "image"]
+- !private ["4Gifu13AnimatedFrameV", "init"]
+- !private ["4Gifu13AnimatedFrameV", "isPlaceholder"]
+- !private ["4Gifu13AnimatedFrameV", "makeAnimatedFrame"]
+- !private ["4Gifu13AnimatedFrameV", "placeholderFrame"]
+- !private ["Sa", "forEach"]
+- ["Sa", "init"]
+- !private ["Sa", "reserveCapacity"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "forEach"]
+- ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "makeAnimatedFrame"]
+- !private ["s13ArrayProtocolP", "placeholderFrame"]
+- !private ["s13ArrayProtocolP", "reserveCapacity"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "makeAnimatedFrame"]
+- !private ["s10ArraySliceV", "placeholderFrame"]
+- !private ["SK", "forEach"]
+- ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "makeAnimatedFrame"]
+- !private ["SK", "placeholderFrame"]
+- !private ["SK", "reserveCapacity"]
+- !private ["SK", "subscript"]
+- !private ["SB", "infinity"]
+- !private ["Sz", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["So15CALayerDelegateP", "ContentMode"]
+- !private ["So16CGImageSourceRefa", "isAnimatedGIF"]
+- ["s7CVarArgP", "ContentMode"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "constrained"]
+- !private ["s7CVarArgP", "filling"]
+- !private ["s7CVarArgP", "forEach"]
+- !private ["s7CVarArgP", "infinity"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "reserveCapacity"]
+- !private ["s7CVarArgP", "resized"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "forEach"]
+- ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "makeAnimatedFrame"]
+- !private ["Sl", "placeholderFrame"]
+- !private ["Sl", "reserveCapacity"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "infinity"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- ["So17UIViewContentModeV", "scaleAspectFill"]
+- ["So17UIViewContentModeV", "scaleAspectFit"]
+- ["s28CustomDebugStringConvertibleP", "ContentMode"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "constrained"]
+- !private ["s28CustomDebugStringConvertibleP", "filling"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "infinity"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "makeAnimatedFrame"]
+- !private ["s28CustomDebugStringConvertibleP", "placeholderFrame"]
+- !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "resized"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "infinity"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "infinity"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "makeAnimatedFrame"]
+- !private ["s17CustomReflectableP", "placeholderFrame"]
+- !private ["s17CustomReflectableP", "reserveCapacity"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", "ContentMode"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "constrained"]
+- !private ["s23CustomStringConvertibleP", "filling"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "infinity"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "makeAnimatedFrame"]
+- !private ["s23CustomStringConvertibleP", "placeholderFrame"]
+- !private ["s23CustomStringConvertibleP", "reserveCapacity"]
+- !private ["s23CustomStringConvertibleP", "resized"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "forEach"]
+- !private ["Se", "infinity"]
+- ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "reserveCapacity"]
+- !private ["Se", "subscript"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "init"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "init"]
+- !private ["Sd", "infinity"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "forEach"]
+- !private ["SE", "infinity"]
+- ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "reserveCapacity"]
+- !private ["SE", "subscript"]
+- ["SQ", "ContentMode"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "async"]
+- !private ["SQ", "constrained"]
+- !private ["SQ", "filling"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "infinity"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isAnimatedGIF"]
+- !private ["SQ", "makeAnimatedFrame"]
+- !private ["SQ", "placeholderFrame"]
+- !private ["SQ", "reserveCapacity"]
+- !private ["SQ", "resized"]
+- ["SQ", "scaleAspectFill"]
+- ["SQ", "scaleAspectFit"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "makeAnimatedFrame"]
+- !private ["s25ExpressibleByArrayLiteralP", "placeholderFrame"]
+- !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "infinity"]
+- !private ["s27ExpressibleByIntegerLiteralP", "infinity"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "infinity"]
+- ["4Gifu10FrameStoreC", "AnimatedFrame"]
+- ["4Gifu10FrameStoreC", "Bool"]
+- !private ["4Gifu10FrameStoreC", "CFData"]
+- !private ["4Gifu10FrameStoreC", "CFDictionary"]
+- ["4Gifu10FrameStoreC", "CFTimeInterval"]
+- !private ["4Gifu10FrameStoreC", "CGImageFrameDuration"]
+- ["4Gifu10FrameStoreC", "CGImageSource"]
+- !private ["4Gifu10FrameStoreC", "CGImageSourceCreateImageAtIndex"]
+- !private ["4Gifu10FrameStoreC", "CGImageSourceCreateIncremental"]
+- !private ["4Gifu10FrameStoreC", "CGImageSourceCreateWithData"]
+- !private ["4Gifu10FrameStoreC", "CGImageSourceGetCount"]
+- ["4Gifu10FrameStoreC", "CGSize"]
+- ["4Gifu10FrameStoreC", "Data"]
+- ["4Gifu10FrameStoreC", "DispatchQueue"]
+- ["4Gifu10FrameStoreC", "Int"]
+- !private ["4Gifu10FrameStoreC", "String"]
+- ["4Gifu10FrameStoreC", "TimeInterval"]
+- ["4Gifu10FrameStoreC", "UIImage"]
+- ["4Gifu10FrameStoreC", "UIView"]
+- ["4Gifu10FrameStoreC", "Void"]
+- ["4Gifu10FrameStoreC", "animatedFrames"]
+- ["4Gifu10FrameStoreC", "bufferFrameCount"]
+- ["4Gifu10FrameStoreC", "contentMode"]
+- ["4Gifu10FrameStoreC", "currentFrameDuration"]
+- ["4Gifu10FrameStoreC", "currentFrameImage"]
+- ["4Gifu10FrameStoreC", "currentFrameIndex"]
+- ["4Gifu10FrameStoreC", "currentLoop"]
+- ["4Gifu10FrameStoreC", "duration"]
+- ["4Gifu10FrameStoreC", "frame"]
+- ["4Gifu10FrameStoreC", "frameCount"]
+- ["4Gifu10FrameStoreC", "imageSource"]
+- !private ["4Gifu10FrameStoreC", "increment"]
+- !private ["4Gifu10FrameStoreC", "incrementCurrentFrameIndex"]
+- !private ["4Gifu10FrameStoreC", "incrementTimeSinceLastFrameChange"]
+- ["4Gifu10FrameStoreC", "init"]
+- ["4Gifu10FrameStoreC", "isAnimatable"]
+- ["4Gifu10FrameStoreC", "isFinished"]
+- !private ["4Gifu10FrameStoreC", "isLastFrame"]
+- !private ["4Gifu10FrameStoreC", "isLastLoop"]
+- !private ["4Gifu10FrameStoreC", "kCFBooleanFalse"]
+- !private ["4Gifu10FrameStoreC", "kCGImageSourceShouldCache"]
+- !private ["4Gifu10FrameStoreC", "loadFrame"]
+- ["4Gifu10FrameStoreC", "loopCount"]
+- ["4Gifu10FrameStoreC", "loopDuration"]
+- ["4Gifu10FrameStoreC", "maxTimeStep"]
+- !private ["4Gifu10FrameStoreC", "min"]
+- !private ["4Gifu10FrameStoreC", "preloadFrameQueue"]
+- !private ["4Gifu10FrameStoreC", "preloadFrameQueue.storage"]
+- !private ["4Gifu10FrameStoreC", "preloadIndexes"]
+- !private ["4Gifu10FrameStoreC", "preloadingIsNeeded"]
+- ["4Gifu10FrameStoreC", "prepareFrames"]
+- ["4Gifu10FrameStoreC", "previousFrameIndex"]
+- !private ["4Gifu10FrameStoreC", "resetAnimatedFrames"]
+- !private ["4Gifu10FrameStoreC", "resetTimeSinceLastFrameChange"]
+- !private ["4Gifu10FrameStoreC", "setupAnimatedFrames"]
+- ["4Gifu10FrameStoreC", "shouldChangeFrame"]
+- ["4Gifu10FrameStoreC", "shouldResizeFrames"]
+- ["4Gifu10FrameStoreC", "size"]
+- ["4Gifu10FrameStoreC", "timeSinceLastFrameChange"]
+- !private ["4Gifu10FrameStoreC", "updatePreloadedFrames"]
+- ["SH", "ContentMode"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "async"]
+- !private ["SH", "constrained"]
+- !private ["SH", "filling"]
+- !private ["SH", "forEach"]
+- !private ["SH", "infinity"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isAnimatedGIF"]
+- !private ["SH", "makeAnimatedFrame"]
+- !private ["SH", "placeholderFrame"]
+- !private ["SH", "reserveCapacity"]
+- !private ["SH", "resized"]
+- ["SH", "scaleAspectFill"]
+- ["SH", "scaleAspectFit"]
+- !private ["SH", "subscript"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "infinity"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "forEach"]
+- ["SM", "init"]
+- !private ["SM", "makeAnimatedFrame"]
+- !private ["SM", "placeholderFrame"]
+- !private ["SM", "reserveCapacity"]
+- !private ["SM", "subscript"]
+- ["So8NSCodingP", "ContentMode"]
+- !private ["So8NSCodingP", "constrained"]
+- !private ["So8NSCodingP", "filling"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "resized"]
+- !private ["So21NSItemProviderReadingP", "constrained"]
+- !private ["So21NSItemProviderReadingP", "filling"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "resized"]
+- !private ["So21NSItemProviderWritingP", "constrained"]
+- !private ["So21NSItemProviderWritingP", "filling"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "resized"]
+- ["So8NSObjectC", "ContentMode"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "constrained"]
+- !private ["So8NSObjectC", "filling"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "resized"]
+- ["So8NSObjectP", "ContentMode"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "constrained"]
+- !private ["So8NSObjectP", "filling"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "resized"]
+- !private ["So14NSSecureCodingP", "constrained"]
+- !private ["So14NSSecureCodingP", "filling"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "resized"]
+- !private ["Sj", "infinity"]
+- !private ["Sj", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "init"]
+- !private ["Sk", "forEach"]
+- ["Sk", "init"]
+- !private ["Sk", "makeAnimatedFrame"]
+- !private ["Sk", "placeholderFrame"]
+- !private ["Sk", "reserveCapacity"]
+- !private ["Sk", "subscript"]
+- !private ["Sn", "forEach"]
+- !private ["SX", "forEach"]
+- !private ["Sm", "forEach"]
+- ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "makeAnimatedFrame"]
+- !private ["Sm", "placeholderFrame"]
+- !private ["Sm", "reserveCapacity"]
+- !private ["Sm", "subscript"]
+- ["SY", "scaleAspectFill"]
+- ["SY", "scaleAspectFit"]
+- !private ["ST", "forEach"]
+- ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "makeAnimatedFrame"]
+- !private ["ST", "placeholderFrame"]
+- !private ["ST", "reserveCapacity"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "infinity"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "infinity"]
+- !private ["Sx", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["So29UIAccessibilityIdentificationP", "ContentMode"]
+- !private ["So29UIAccessibilityIdentificationP", "constrained"]
+- !private ["So29UIAccessibilityIdentificationP", "filling"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "resized"]
+- ["So12UIAppearanceP", "ContentMode"]
+- ["So21UIAppearanceContainerP", "ContentMode"]
+- ["So17UICoordinateSpaceP", "ContentMode"]
+- ["So13UIDynamicItemP", "ContentMode"]
+- ["So18UIFocusEnvironmentP", "ContentMode"]
+- ["So11UIFocusItemP", "ContentMode"]
+- ["So20UIFocusItemContainerP", "ContentMode"]
+- !private ["So7UIImageC", "constrained"]
+- !private ["So7UIImageC", "filling"]
+- !private ["So7UIImageC", "init"]
+- !private ["So7UIImageC", "resized"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "constrained"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "filling"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "resized"]
+- ["So30UIPasteConfigurationSupportingP", "ContentMode"]
+- ["So11UIResponderC", "ContentMode"]
+- ["So30UIResponderStandardEditActionsP", "ContentMode"]
+- ["So18UITraitEnvironmentP", "ContentMode"]
+- ["So23UIUserActivityRestoringP", "ContentMode"]
+- ["So6UIViewC", "ContentMode"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["14CoreFoundation9_CFObjectP", "isAnimatedGIF"]
+- !private ["s15_CVarArgAlignedP", "infinity"]
+- !private ["s22_CVarArgPassedAsDoubleP", "infinity"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "ContentMode"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "makeAnimatedFrame"]
+- !private ["s24_DestructorSafeContainerP", "placeholderFrame"]
+- !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "infinity"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "infinity"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "constrained"]
+- !private ["s26_ExpressibleByImageLiteralP", "filling"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "resized"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "infinity"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reserveCapacity"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ContentMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "constrained"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "filling"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resized"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "infinity"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "reserveCapacity"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "4Gifu13AnimatedFrameV"
+- "Sa"
+- "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- "SK"
+- !private "SB"
+- !private "Sz"
+- !private "Sb"
+- "So15CALayerDelegateP"
+- !private "So16CGImageSourceRefa"
+- "s7CVarArgP"
+- "Sl"
+- !private "SL"
+- "So17UIViewContentModeV"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "Sd"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
+- "4Gifu10FrameStoreC"
+- "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "SM"
+- "So8NSCodingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "So9OS_objectC"
+- "Sk"
+- !private "Sn"
+- !private "SX"
+- "Sm"
+- "SY"
+- "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- !private "s18_BitwiseOperationsP"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Target Support Files/Gifu/Gifu-umbrella.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Gifu.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Gifu.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "abe0912409cb5038cd1f50b649308d16"

@@ -80,12 +80,12 @@
                                     <action selector="registerPressed:" destination="5ic-xp-G8L" eventType="touchUpInside" id="qkt-1o-Mxw"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n90-bZ-mLT">
-                                <rect key="frame" x="165.5" y="156" width="44" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="KIE-Eg-tiz"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="thy-cN-Eat"/>
-                                </constraints>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n90-bZ-mLT">
+                                <rect key="frame" x="87.5" y="80" width="200" height="200"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="addImage:" destination="5ic-xp-G8L" eventType="touchUpInside" id="YOz-IP-wQx"/>
                                 </connections>
@@ -96,13 +96,15 @@
                             <constraint firstItem="fou-is-nro" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="0gd-Xu-ild"/>
                             <constraint firstItem="TAM-xa-781" firstAttribute="top" secondItem="gpT-5W-5Xs" secondAttribute="top" constant="16" id="2Cq-H0-flR"/>
                             <constraint firstItem="TAM-xa-781" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="3Wy-oC-0Sj"/>
-                            <constraint firstItem="n90-bZ-mLT" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="3kD-q0-L99"/>
                             <constraint firstItem="pKB-by-pu1" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="9s7-q1-5dp"/>
                             <constraint firstItem="rVm-ao-aTi" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="ATD-O3-5Fh"/>
                             <constraint firstItem="pKB-by-pu1" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="DCB-KF-upu"/>
+                            <constraint firstItem="n90-bZ-mLT" firstAttribute="top" secondItem="TAM-xa-781" secondAttribute="top" id="ExL-54-8XA"/>
                             <constraint firstItem="fou-is-nro" firstAttribute="top" secondItem="rVm-ao-aTi" secondAttribute="bottom" constant="31" id="Id3-sc-4ie"/>
                             <constraint firstItem="gpT-5W-5Xs" firstAttribute="trailing" secondItem="vRQ-TG-fFj" secondAttribute="trailing" constant="60" id="JiE-tW-6tu"/>
+                            <constraint firstItem="n90-bZ-mLT" firstAttribute="bottom" secondItem="TAM-xa-781" secondAttribute="bottom" id="KUg-Gj-SWk"/>
                             <constraint firstItem="Veu-RT-mrc" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="Lbf-C9-mAs"/>
+                            <constraint firstItem="n90-bZ-mLT" firstAttribute="trailing" secondItem="TAM-xa-781" secondAttribute="trailing" id="OLN-if-cfj"/>
                             <constraint firstItem="vRQ-TG-fFj" firstAttribute="leading" secondItem="gpT-5W-5Xs" secondAttribute="leading" constant="60" id="Px1-vL-Qhr"/>
                             <constraint firstItem="Veu-RT-mrc" firstAttribute="top" secondItem="TAM-xa-781" secondAttribute="bottom" constant="54" id="RH4-KL-qqv"/>
                             <constraint firstItem="pKB-by-pu1" firstAttribute="top" secondItem="fou-is-nro" secondAttribute="bottom" constant="33" id="U5r-cd-t2b"/>
@@ -111,7 +113,7 @@
                             <constraint firstItem="rVm-ao-aTi" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="ahs-4D-lBh"/>
                             <constraint firstItem="gpT-5W-5Xs" firstAttribute="bottom" secondItem="vRQ-TG-fFj" secondAttribute="bottom" constant="60" id="lrp-er-R3m"/>
                             <constraint firstItem="Veu-RT-mrc" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="oCV-BQ-YKL"/>
-                            <constraint firstItem="n90-bZ-mLT" firstAttribute="top" secondItem="gpT-5W-5Xs" secondAttribute="top" constant="92" id="yco-Me-K5H"/>
+                            <constraint firstItem="n90-bZ-mLT" firstAttribute="leading" secondItem="TAM-xa-781" secondAttribute="leading" id="ySr-sX-I6X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gpT-5W-5Xs"/>
                     </view>
@@ -125,12 +127,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9b-Nz-2Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="251"/>
+            <point key="canvasLocation" x="1040.8" y="250.52473763118442"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tempo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

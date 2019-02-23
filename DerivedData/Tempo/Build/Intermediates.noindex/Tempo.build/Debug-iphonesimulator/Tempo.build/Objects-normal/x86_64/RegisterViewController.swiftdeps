@@ -1,0 +1,719 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RegisterViewController"
+provides-nominal:
+- "5Tempo22RegisterViewControllerC"
+provides-member:
+- ["5Tempo22RegisterViewControllerC", ""]
+provides-dynamic-lookup:
+- "addImage"
+- "confirmPassword"
+- "emailField"
+- "passwordField"
+- "profileImage"
+- "registerPressed"
+- "userName"
+- "viewDidLoad"
+depends-top-level:
+- !private "+"
+- !private "??"
+- !private "Alamofire"
+- "AssignmentPrecedence"
+- !private "HTTPHeaders"
+- !private "JSONEncoding"
+- "RegisterViewController"
+- "String"
+- "StringLiteralType"
+- "UIButton"
+- "UIImageView"
+- "UITextField"
+- "UIViewController"
+- "UserDashboard"
+- !private "globalData"
+- !private "parseDashboard"
+- !private "print"
+depends-member:
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Alamofire"]
+- !private ["s7CVarArgP", "JSONEncoding"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "email"]
+- !private ["s7CVarArgP", "emailField"]
+- !private ["s7CVarArgP", "globalData"]
+- !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateDashboard"]
+- !private ["s7CVarArgP", "parseDashboard"]
+- !private ["s7CVarArgP", "password"]
+- !private ["s7CVarArgP", "passwordField"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "userName"]
+- !private ["s7CVarArgP", "username"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Alamofire"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONEncoding"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "email"]
+- !private ["s28CustomDebugStringConvertibleP", "emailField"]
+- !private ["s28CustomDebugStringConvertibleP", "globalData"]
+- !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateDashboard"]
+- !private ["s28CustomDebugStringConvertibleP", "parseDashboard"]
+- !private ["s28CustomDebugStringConvertibleP", "password"]
+- !private ["s28CustomDebugStringConvertibleP", "passwordField"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "userName"]
+- !private ["s28CustomDebugStringConvertibleP", "username"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "Alamofire"]
+- !private ["s23CustomStringConvertibleP", "JSONEncoding"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "email"]
+- !private ["s23CustomStringConvertibleP", "emailField"]
+- !private ["s23CustomStringConvertibleP", "globalData"]
+- !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateDashboard"]
+- !private ["s23CustomStringConvertibleP", "parseDashboard"]
+- !private ["s23CustomStringConvertibleP", "password"]
+- !private ["s23CustomStringConvertibleP", "passwordField"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "responseJSON"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "userName"]
+- !private ["s23CustomStringConvertibleP", "username"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["9Alamofire11DataRequestC", "responseJSON"]
+- !private ["9Alamofire12DataResponseV", "data"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "text"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "text"]
+- !private ["SQ", "Alamofire"]
+- !private ["SQ", "JSONEncoding"]
+- ["SQ", ""]
+- !private ["SQ", "email"]
+- !private ["SQ", "emailField"]
+- !private ["SQ", "globalData"]
+- !private ["SQ", "hideKeyboardWhenTappedAround"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "instantiateDashboard"]
+- !private ["SQ", "parseDashboard"]
+- !private ["SQ", "password"]
+- !private ["SQ", "passwordField"]
+- !private ["SQ", "post"]
+- !private ["SQ", "print"]
+- !private ["SQ", "text"]
+- !private ["SQ", "userName"]
+- !private ["SQ", "username"]
+- !private ["SQ", "viewDidLoad"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["9Alamofire10HTTPMethodO", "post"]
+- !private ["SH", "Alamofire"]
+- !private ["SH", "JSONEncoding"]
+- ["SH", ""]
+- !private ["SH", "email"]
+- !private ["SH", "emailField"]
+- !private ["SH", "globalData"]
+- !private ["SH", "hideKeyboardWhenTappedAround"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "instantiateDashboard"]
+- !private ["SH", "parseDashboard"]
+- !private ["SH", "password"]
+- !private ["SH", "passwordField"]
+- !private ["SH", "post"]
+- !private ["SH", "print"]
+- !private ["SH", "text"]
+- !private ["SH", "userName"]
+- !private ["SH", "username"]
+- !private ["SH", "viewDidLoad"]
+- !private ["9Alamofire12JSONEncodingV", "default"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Alamofire"]
+- !private ["So8NSCodingP", "JSONEncoding"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "email"]
+- !private ["So8NSCodingP", "emailField"]
+- !private ["So8NSCodingP", "globalData"]
+- !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "instantiateDashboard"]
+- !private ["So8NSCodingP", "parseDashboard"]
+- !private ["So8NSCodingP", "password"]
+- !private ["So8NSCodingP", "passwordField"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "userName"]
+- !private ["So8NSCodingP", "username"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "Alamofire"]
+- !private ["So26NSExtensionRequestHandlingP", "JSONEncoding"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "email"]
+- !private ["So26NSExtensionRequestHandlingP", "emailField"]
+- !private ["So26NSExtensionRequestHandlingP", "globalData"]
+- !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "instantiateDashboard"]
+- !private ["So26NSExtensionRequestHandlingP", "parseDashboard"]
+- !private ["So26NSExtensionRequestHandlingP", "password"]
+- !private ["So26NSExtensionRequestHandlingP", "passwordField"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "userName"]
+- !private ["So26NSExtensionRequestHandlingP", "username"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "Alamofire"]
+- ["So8NSObjectC", "AlamogetGetDashboard"]
+- !private ["So8NSObjectC", "HTTPHeaders"]
+- !private ["So8NSObjectC", "JSONEncoding"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "UserDashboard"]
+- ["So8NSObjectC", "addImage"]
+- ["So8NSObjectC", "alamoResiterPost"]
+- ["So8NSObjectC", "confirmPassword"]
+- ["So8NSObjectC", "confirmedP"]
+- ["So8NSObjectC", "email"]
+- ["So8NSObjectC", "emailField"]
+- !private ["So8NSObjectC", "globalData"]
+- !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "instantiateDashboard"]
+- !private ["So8NSObjectC", "parseDashboard"]
+- ["So8NSObjectC", "password"]
+- ["So8NSObjectC", "passwordField"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "profileImage"]
+- ["So8NSObjectC", "registerPressed"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "userName"]
+- ["So8NSObjectC", "username"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "Alamofire"]
+- !private ["So8NSObjectP", "JSONEncoding"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "email"]
+- !private ["So8NSObjectP", "emailField"]
+- !private ["So8NSObjectP", "globalData"]
+- !private ["So8NSObjectP", "hideKeyboardWhenTappedAround"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateDashboard"]
+- !private ["So8NSObjectP", "parseDashboard"]
+- !private ["So8NSObjectP", "password"]
+- !private ["So8NSObjectP", "passwordField"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "userName"]
+- !private ["So8NSObjectP", "username"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "text"]
+- !private ["9Alamofire17ParameterEncodingP", "default"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["SY", "post"]
+- !private ["5Tempo22RegisterViewControllerC", "Alamofire"]
+- ["5Tempo22RegisterViewControllerC", "AlamogetGetDashboard"]
+- !private ["5Tempo22RegisterViewControllerC", "HTTPHeaders"]
+- !private ["5Tempo22RegisterViewControllerC", "JSONEncoding"]
+- ["5Tempo22RegisterViewControllerC", "String"]
+- ["5Tempo22RegisterViewControllerC", "UIButton"]
+- ["5Tempo22RegisterViewControllerC", "UIImageView"]
+- ["5Tempo22RegisterViewControllerC", "UITextField"]
+- ["5Tempo22RegisterViewControllerC", "UserDashboard"]
+- ["5Tempo22RegisterViewControllerC", "addImage"]
+- ["5Tempo22RegisterViewControllerC", "alamoResiterPost"]
+- ["5Tempo22RegisterViewControllerC", "confirmPassword"]
+- ["5Tempo22RegisterViewControllerC", "confirmedP"]
+- ["5Tempo22RegisterViewControllerC", "email"]
+- ["5Tempo22RegisterViewControllerC", "emailField"]
+- !private ["5Tempo22RegisterViewControllerC", "globalData"]
+- !private ["5Tempo22RegisterViewControllerC", "hideKeyboardWhenTappedAround"]
+- ["5Tempo22RegisterViewControllerC", "init"]
+- ["5Tempo22RegisterViewControllerC", "instantiateDashboard"]
+- !private ["5Tempo22RegisterViewControllerC", "parseDashboard"]
+- ["5Tempo22RegisterViewControllerC", "password"]
+- ["5Tempo22RegisterViewControllerC", "passwordField"]
+- !private ["5Tempo22RegisterViewControllerC", "print"]
+- ["5Tempo22RegisterViewControllerC", "profileImage"]
+- ["5Tempo22RegisterViewControllerC", "registerPressed"]
+- ["5Tempo22RegisterViewControllerC", "userName"]
+- ["5Tempo22RegisterViewControllerC", "username"]
+- ["5Tempo22RegisterViewControllerC", "viewDidLoad"]
+- !private ["9Alamofire7RequestC", "responseJSON"]
+- !private ["9Alamofire8ResponseP", "data"]
+- ["ST", "init"]
+- ["ST", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Alamofire"]
+- !private ["So21UIAppearanceContainerP", "JSONEncoding"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "email"]
+- !private ["So21UIAppearanceContainerP", "emailField"]
+- !private ["So21UIAppearanceContainerP", "globalData"]
+- !private ["So21UIAppearanceContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "instantiateDashboard"]
+- !private ["So21UIAppearanceContainerP", "parseDashboard"]
+- !private ["So21UIAppearanceContainerP", "password"]
+- !private ["So21UIAppearanceContainerP", "passwordField"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "userName"]
+- !private ["So21UIAppearanceContainerP", "username"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "Alamofire"]
+- !private ["So18UIContentContainerP", "JSONEncoding"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "email"]
+- !private ["So18UIContentContainerP", "emailField"]
+- !private ["So18UIContentContainerP", "globalData"]
+- !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "instantiateDashboard"]
+- !private ["So18UIContentContainerP", "parseDashboard"]
+- !private ["So18UIContentContainerP", "password"]
+- !private ["So18UIContentContainerP", "passwordField"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "userName"]
+- !private ["So18UIContentContainerP", "username"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Alamofire"]
+- !private ["So18UIFocusEnvironmentP", "JSONEncoding"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "email"]
+- !private ["So18UIFocusEnvironmentP", "emailField"]
+- !private ["So18UIFocusEnvironmentP", "globalData"]
+- !private ["So18UIFocusEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "instantiateDashboard"]
+- !private ["So18UIFocusEnvironmentP", "parseDashboard"]
+- !private ["So18UIFocusEnvironmentP", "password"]
+- !private ["So18UIFocusEnvironmentP", "passwordField"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "userName"]
+- !private ["So18UIFocusEnvironmentP", "username"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Alamofire"]
+- !private ["So30UIPasteConfigurationSupportingP", "JSONEncoding"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "email"]
+- !private ["So30UIPasteConfigurationSupportingP", "emailField"]
+- !private ["So30UIPasteConfigurationSupportingP", "globalData"]
+- !private ["So30UIPasteConfigurationSupportingP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "instantiateDashboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "parseDashboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "password"]
+- !private ["So30UIPasteConfigurationSupportingP", "passwordField"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "userName"]
+- !private ["So30UIPasteConfigurationSupportingP", "username"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "Alamofire"]
+- ["So11UIResponderC", "AlamogetGetDashboard"]
+- !private ["So11UIResponderC", "HTTPHeaders"]
+- !private ["So11UIResponderC", "JSONEncoding"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "UserDashboard"]
+- ["So11UIResponderC", "addImage"]
+- ["So11UIResponderC", "alamoResiterPost"]
+- ["So11UIResponderC", "confirmPassword"]
+- ["So11UIResponderC", "confirmedP"]
+- ["So11UIResponderC", "email"]
+- ["So11UIResponderC", "emailField"]
+- !private ["So11UIResponderC", "globalData"]
+- !private ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "instantiateDashboard"]
+- !private ["So11UIResponderC", "parseDashboard"]
+- ["So11UIResponderC", "password"]
+- ["So11UIResponderC", "passwordField"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "profileImage"]
+- ["So11UIResponderC", "registerPressed"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "userName"]
+- ["So11UIResponderC", "username"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Alamofire"]
+- !private ["So30UIResponderStandardEditActionsP", "JSONEncoding"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "email"]
+- !private ["So30UIResponderStandardEditActionsP", "emailField"]
+- !private ["So30UIResponderStandardEditActionsP", "globalData"]
+- !private ["So30UIResponderStandardEditActionsP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "instantiateDashboard"]
+- !private ["So30UIResponderStandardEditActionsP", "parseDashboard"]
+- !private ["So30UIResponderStandardEditActionsP", "password"]
+- !private ["So30UIResponderStandardEditActionsP", "passwordField"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "userName"]
+- !private ["So30UIResponderStandardEditActionsP", "username"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "Alamofire"]
+- !private ["So16UIStateRestoringP", "JSONEncoding"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "email"]
+- !private ["So16UIStateRestoringP", "emailField"]
+- !private ["So16UIStateRestoringP", "globalData"]
+- !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "instantiateDashboard"]
+- !private ["So16UIStateRestoringP", "parseDashboard"]
+- !private ["So16UIStateRestoringP", "password"]
+- !private ["So16UIStateRestoringP", "passwordField"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "userName"]
+- !private ["So16UIStateRestoringP", "username"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Alamofire"]
+- !private ["So18UITraitEnvironmentP", "JSONEncoding"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "email"]
+- !private ["So18UITraitEnvironmentP", "emailField"]
+- !private ["So18UITraitEnvironmentP", "globalData"]
+- !private ["So18UITraitEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "instantiateDashboard"]
+- !private ["So18UITraitEnvironmentP", "parseDashboard"]
+- !private ["So18UITraitEnvironmentP", "password"]
+- !private ["So18UITraitEnvironmentP", "passwordField"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "userName"]
+- !private ["So18UITraitEnvironmentP", "username"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Alamofire"]
+- !private ["So23UIUserActivityRestoringP", "JSONEncoding"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "email"]
+- !private ["So23UIUserActivityRestoringP", "emailField"]
+- !private ["So23UIUserActivityRestoringP", "globalData"]
+- !private ["So23UIUserActivityRestoringP", "hideKeyboardWhenTappedAround"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "instantiateDashboard"]
+- !private ["So23UIUserActivityRestoringP", "parseDashboard"]
+- !private ["So23UIUserActivityRestoringP", "password"]
+- !private ["So23UIUserActivityRestoringP", "passwordField"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "userName"]
+- !private ["So23UIUserActivityRestoringP", "username"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "Alamofire"]
+- ["So16UIViewControllerC", "AlamogetGetDashboard"]
+- !private ["So16UIViewControllerC", "HTTPHeaders"]
+- !private ["So16UIViewControllerC", "JSONEncoding"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UIImageView"]
+- ["So16UIViewControllerC", "UITextField"]
+- ["So16UIViewControllerC", "UserDashboard"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "addImage"]
+- ["So16UIViewControllerC", "alamoResiterPost"]
+- ["So16UIViewControllerC", "confirmPassword"]
+- ["So16UIViewControllerC", "confirmedP"]
+- ["So16UIViewControllerC", "email"]
+- ["So16UIViewControllerC", "emailField"]
+- !private ["So16UIViewControllerC", "globalData"]
+- !private ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "instantiateDashboard"]
+- !private ["So16UIViewControllerC", "parseDashboard"]
+- ["So16UIViewControllerC", "password"]
+- ["So16UIViewControllerC", "passwordField"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "profileImage"]
+- ["So16UIViewControllerC", "registerPressed"]
+- ["So16UIViewControllerC", "userName"]
+- ["So16UIViewControllerC", "username"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Alamofire"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONEncoding"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emailField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "globalData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateDashboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parseDashboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "password"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "passwordField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "username"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["5Tempo10globalDataO", "dashboardURL"]
+depends-nominal:
+- "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "9Alamofire11DataRequestC"
+- !private "9Alamofire12DataResponseV"
+- "Se"
+- "SE"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "9Alamofire10HTTPMethodO"
+- "SH"
+- !private "9Alamofire12JSONEncodingV"
+- "10SwiftyJSON17JSONSubscriptTypeP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "9Alamofire17ParameterEncodingP"
+- "Sm"
+- !private "SY"
+- "5Tempo22RegisterViewControllerC"
+- !private "9Alamofire7RequestC"
+- !private "9Alamofire8ResponseP"
+- "ST"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "9Alamofire14URLConvertibleP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+- !private "5Tempo10globalDataO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "73ecf016402539acbfdba412089b5456"

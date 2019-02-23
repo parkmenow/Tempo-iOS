@@ -15,6 +15,7 @@
 		6C5F8705221929D6000EA110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5F8704221929D6000EA110 /* Assets.xcassets */; };
 		6C5F8708221929D6000EA110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5F8706221929D6000EA110 /* LaunchScreen.storyboard */; };
 		8E8A645A2220E4A800684D31 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A64592220E4A800684D31 /* RootViewController.swift */; };
+		8E8A645E2220F70800684D31 /* UserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A645D2220F70800684D31 /* UserDashboard.swift */; };
 		8EB41D9D221F762E006B1E60 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41D9B221F762E006B1E60 /* PaymentViewController.swift */; };
 		8EB41D9E221F762E006B1E60 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB41D9C221F762E006B1E60 /* PaymentViewController.xib */; };
 		8EB41DA2221F9039006B1E60 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41DA0221F9039006B1E60 /* MapViewController.swift */; };
@@ -22,7 +23,7 @@
 		8EB41DA5221F919F006B1E60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41DA4221F919F006B1E60 /* LoginViewController.swift */; };
 		8EB41DA8221F9899006B1E60 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41DA7221F9899006B1E60 /* Booking.swift */; };
 		8EB41DAA221F9EAC006B1E60 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41DA9221F9EAC006B1E60 /* Car.swift */; };
-		8EB41DAC221FB861006B1E60 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41DAB221FB861006B1E60 /* Parsing.swift */; };
+		8EB41DAC221FB861006B1E60 /* ParsingJSONs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB41DAB221FB861006B1E60 /* ParsingJSONs.swift */; };
 		8EE2D90E2220DF9400ADCF25 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2D90D2220DF9400ADCF25 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		6C5F8709221929D6000EA110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E8A64592220E4A800684D31 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		8E8A645C2220EBAB00684D31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		8E8A645D2220F70800684D31 /* UserDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboard.swift; sourceTree = "<group>"; };
 		8EB41D9B221F762E006B1E60 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		8EB41D9C221F762E006B1E60 /* PaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
 		8EB41DA0221F9039006B1E60 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +48,7 @@
 		8EB41DA4221F919F006B1E60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8EB41DA7221F9899006B1E60 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		8EB41DA9221F9EAC006B1E60 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		8EB41DAB221FB861006B1E60 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		8EB41DAB221FB861006B1E60 /* ParsingJSONs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingJSONs.swift; sourceTree = "<group>"; };
 		8EE2D90D2220DF9400ADCF25 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		99DA8D8027044EB542958E59 /* Pods-Tempo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo.release.xcconfig"; path = "Target Support Files/Pods-Tempo/Pods-Tempo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +121,8 @@
 			children = (
 				8EB41DA7221F9899006B1E60 /* Booking.swift */,
 				8EB41DA9221F9EAC006B1E60 /* Car.swift */,
-				8EB41DAB221FB861006B1E60 /* Parsing.swift */,
+				8EB41DAB221FB861006B1E60 /* ParsingJSONs.swift */,
+				8E8A645D2220F70800684D31 /* UserDashboard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,11 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C5F870C221929D6000EA110 /* Build configuration list for PBXNativeTarget "Tempo" */;
 			buildPhases = (
+				6C5F86F5221929D1000EA110 /* Resources */,
+				48263A45D370DE2151C02DAD /* [CP] Copy Pods Resources */,
 				C29DA3C08F47FB8F2878D683 /* [CP] Check Pods Manifest.lock */,
 				6C5F86F3221929D1000EA110 /* Sources */,
 				6C5F86F4221929D1000EA110 /* Frameworks */,
-				6C5F86F5221929D1000EA110 /* Resources */,
-				48263A45D370DE2151C02DAD /* [CP] Copy Pods Resources */,
 				33C86236BA0C05A7B1979C0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -310,9 +313,10 @@
 			files = (
 				6C5F86FD221929D1000EA110 /* ViewController.swift in Sources */,
 				8EE2D90E2220DF9400ADCF25 /* RegisterViewController.swift in Sources */,
-				8EB41DAC221FB861006B1E60 /* Parsing.swift in Sources */,
+				8EB41DAC221FB861006B1E60 /* ParsingJSONs.swift in Sources */,
 				8E8A645A2220E4A800684D31 /* RootViewController.swift in Sources */,
 				6C5F86FB221929D1000EA110 /* AppDelegate.swift in Sources */,
+				8E8A645E2220F70800684D31 /* UserDashboard.swift in Sources */,
 				8EB41DAA221F9EAC006B1E60 /* Car.swift in Sources */,
 				8EB41DA8221F9899006B1E60 /* Booking.swift in Sources */,
 				8EB41DA5221F919F006B1E60 /* LoginViewController.swift in Sources */,
@@ -479,7 +483,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -500,7 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

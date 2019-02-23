@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "71316f386e71d7a3a9984f52c654476c"
+build_time: [1550900304, 677595000]
+inputs:
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [1550894178, 0]

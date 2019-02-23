@@ -1,0 +1,380 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GIFImageView"
+provides-nominal:
+- "4Gifu12GIFImageViewC"
+provides-member:
+- ["4Gifu12GIFImageViewC", ""]
+provides-dynamic-lookup:
+- "display"
+depends-top-level:
+- "Animator"
+- "CALayer"
+- "GIFAnimatable"
+- "GIFImageView"
+- "UIImageView"
+depends-member:
+- !private ["4Gifu8AnimatorC", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "Animator"]
+- ["So15CALayerDelegateP", ""]
+- ["So15CALayerDelegateP", "animator"]
+- ["So15CALayerDelegateP", "contentMode"]
+- ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
+- ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "updateImageIfNeeded"]
+- !private ["s7CVarArgP", "Animator"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "animator"]
+- ["s7CVarArgP", "contentMode"]
+- ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "updateImageIfNeeded"]
+- !private ["s28CustomDebugStringConvertibleP", "Animator"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "animator"]
+- ["s28CustomDebugStringConvertibleP", "contentMode"]
+- ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "updateImageIfNeeded"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "Animator"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "animator"]
+- ["s23CustomStringConvertibleP", "contentMode"]
+- ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "updateImageIfNeeded"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SQ", "Animator"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "animator"]
+- ["SQ", "contentMode"]
+- ["SQ", "frame"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "layer"]
+- !private ["SQ", "updateImageIfNeeded"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["4Gifu13GIFAnimatableP", "Animator"]
+- ["4Gifu13GIFAnimatableP", ""]
+- ["4Gifu13GIFAnimatableP", "animator"]
+- ["4Gifu13GIFAnimatableP", "contentMode"]
+- ["4Gifu13GIFAnimatableP", "frame"]
+- ["4Gifu13GIFAnimatableP", "layer"]
+- !private ["4Gifu13GIFAnimatableP", "updateImageIfNeeded"]
+- ["4Gifu12GIFImageViewC", "Animator"]
+- ["4Gifu12GIFImageViewC", "CALayer"]
+- ["4Gifu12GIFImageViewC", "animator"]
+- !private ["4Gifu12GIFImageViewC", "animator.storage"]
+- ["4Gifu12GIFImageViewC", "contentMode"]
+- ["4Gifu12GIFImageViewC", "deinit"]
+- ["4Gifu12GIFImageViewC", "display"]
+- ["4Gifu12GIFImageViewC", "frame"]
+- ["4Gifu12GIFImageViewC", "init"]
+- ["4Gifu12GIFImageViewC", "layer"]
+- !private ["4Gifu12GIFImageViewC", "updateImageIfNeeded"]
+- !private ["SH", "Animator"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "animator"]
+- ["SH", "contentMode"]
+- ["SH", "frame"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "layer"]
+- !private ["SH", "updateImageIfNeeded"]
+- !private ["4Gifu14ImageContainerP", "Animator"]
+- ["4Gifu14ImageContainerP", ""]
+- ["4Gifu14ImageContainerP", "animator"]
+- ["4Gifu14ImageContainerP", "contentMode"]
+- ["4Gifu14ImageContainerP", "frame"]
+- !private ["4Gifu14ImageContainerP", "init"]
+- !private ["4Gifu14ImageContainerP", "init"]
+- ["4Gifu14ImageContainerP", "layer"]
+- !private ["4Gifu14ImageContainerP", "updateImageIfNeeded"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "Animator"]
+- ["So8NSCodingP", ""]
+- ["So8NSCodingP", "animator"]
+- ["So8NSCodingP", "contentMode"]
+- ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "updateImageIfNeeded"]
+- ["So8NSObjectC", "Animator"]
+- ["So8NSObjectC", "CALayer"]
+- ["So8NSObjectC", "animator"]
+- ["So8NSObjectC", "animator.storage"]
+- ["So8NSObjectC", "contentMode"]
+- ["So8NSObjectC", "display"]
+- ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "updateImageIfNeeded"]
+- !private ["So8NSObjectP", "Animator"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "animator"]
+- ["So8NSObjectP", "contentMode"]
+- ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "updateImageIfNeeded"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "Animator"]
+- ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", ""]
+- ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "animator"]
+- ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
+- ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "updateImageIfNeeded"]
+- !private ["So29UIAccessibilityIdentificationP", "Animator"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- ["So29UIAccessibilityIdentificationP", "animator"]
+- ["So29UIAccessibilityIdentificationP", "contentMode"]
+- ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "updateImageIfNeeded"]
+- !private ["So12UIAppearanceP", "Animator"]
+- ["So12UIAppearanceP", ""]
+- ["So12UIAppearanceP", "animator"]
+- ["So12UIAppearanceP", "contentMode"]
+- ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
+- ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "updateImageIfNeeded"]
+- !private ["So21UIAppearanceContainerP", "Animator"]
+- ["So21UIAppearanceContainerP", ""]
+- ["So21UIAppearanceContainerP", "animator"]
+- ["So21UIAppearanceContainerP", "contentMode"]
+- ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "updateImageIfNeeded"]
+- !private ["So17UICoordinateSpaceP", "Animator"]
+- ["So17UICoordinateSpaceP", ""]
+- ["So17UICoordinateSpaceP", "animator"]
+- ["So17UICoordinateSpaceP", "contentMode"]
+- ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "updateImageIfNeeded"]
+- !private ["So13UIDynamicItemP", "Animator"]
+- ["So13UIDynamicItemP", ""]
+- ["So13UIDynamicItemP", "animator"]
+- ["So13UIDynamicItemP", "contentMode"]
+- ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
+- ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "updateImageIfNeeded"]
+- !private ["So18UIFocusEnvironmentP", "Animator"]
+- ["So18UIFocusEnvironmentP", ""]
+- ["So18UIFocusEnvironmentP", "animator"]
+- ["So18UIFocusEnvironmentP", "contentMode"]
+- ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "updateImageIfNeeded"]
+- !private ["So11UIFocusItemP", "Animator"]
+- ["So11UIFocusItemP", ""]
+- ["So11UIFocusItemP", "animator"]
+- ["So11UIFocusItemP", "contentMode"]
+- ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "updateImageIfNeeded"]
+- !private ["So20UIFocusItemContainerP", "Animator"]
+- ["So20UIFocusItemContainerP", ""]
+- ["So20UIFocusItemContainerP", "animator"]
+- ["So20UIFocusItemContainerP", "contentMode"]
+- ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "updateImageIfNeeded"]
+- ["So11UIImageViewC", "Animator"]
+- ["So11UIImageViewC", "CALayer"]
+- ["So11UIImageViewC", ""]
+- ["So11UIImageViewC", "animator"]
+- ["So11UIImageViewC", "animator.storage"]
+- ["So11UIImageViewC", "contentMode"]
+- ["So11UIImageViewC", "display"]
+- ["So11UIImageViewC", "frame"]
+- ["So11UIImageViewC", "init"]
+- !private ["So11UIImageViewC", "init"]
+- ["So11UIImageViewC", "layer"]
+- !private ["So11UIImageViewC", "updateImageIfNeeded"]
+- !private ["So30UIPasteConfigurationSupportingP", "Animator"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So30UIPasteConfigurationSupportingP", "animator"]
+- ["So30UIPasteConfigurationSupportingP", "contentMode"]
+- ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "updateImageIfNeeded"]
+- ["So11UIResponderC", "Animator"]
+- ["So11UIResponderC", "CALayer"]
+- ["So11UIResponderC", "animator"]
+- ["So11UIResponderC", "animator.storage"]
+- ["So11UIResponderC", "contentMode"]
+- ["So11UIResponderC", "display"]
+- ["So11UIResponderC", "frame"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "layer"]
+- !private ["So11UIResponderC", "updateImageIfNeeded"]
+- !private ["So30UIResponderStandardEditActionsP", "Animator"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So30UIResponderStandardEditActionsP", "animator"]
+- ["So30UIResponderStandardEditActionsP", "contentMode"]
+- ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "updateImageIfNeeded"]
+- !private ["So18UITraitEnvironmentP", "Animator"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So18UITraitEnvironmentP", "animator"]
+- ["So18UITraitEnvironmentP", "contentMode"]
+- ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "updateImageIfNeeded"]
+- !private ["So23UIUserActivityRestoringP", "Animator"]
+- ["So23UIUserActivityRestoringP", ""]
+- ["So23UIUserActivityRestoringP", "animator"]
+- ["So23UIUserActivityRestoringP", "contentMode"]
+- ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "updateImageIfNeeded"]
+- ["So6UIViewC", "Animator"]
+- ["So6UIViewC", "CALayer"]
+- ["So6UIViewC", "animator"]
+- ["So6UIViewC", "animator.storage"]
+- ["So6UIViewC", "contentMode"]
+- ["So6UIViewC", "display"]
+- ["So6UIViewC", "frame"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
+- ["So6UIViewC", "layer"]
+- !private ["So6UIViewC", "updateImageIfNeeded"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Animator"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "animator"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "contentMode"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "updateImageIfNeeded"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Animator"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "animator"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateImageIfNeeded"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+depends-nominal:
+- !private "4Gifu8AnimatorC"
+- !private "Sb"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "4Gifu13GIFAnimatableP"
+- "4Gifu12GIFImageViewC"
+- "SH"
+- "4Gifu14ImageContainerP"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So11UIImageViewC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Target Support Files/Gifu/Gifu-umbrella.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Gifu/Source/Gifu.h"
+- "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Gifu.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cc02da7bd05fad0cfe55b43b10d615ec"

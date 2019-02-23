@@ -11,6 +11,6 @@ target 'Tempo' do
   pod 'Gifu'
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.8'
-  pod 'SVProgressHUD' , 'https://github.com/SVProgressHUD/SVProgressHUD.git'
+  pod 'SVProgressHUD'
 
 end

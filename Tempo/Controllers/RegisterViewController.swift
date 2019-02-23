@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
         
     }
     @IBAction func addImage(_ sender: UIButton) {
-        
+        print("Add image Pressed")
         
     }
     
@@ -42,24 +42,50 @@ class RegisterViewController: UIViewController {
         password = passwordField.text ?? "test1"
         
         let params : [ String : Any ] = ["name": username,
-                                            "email": email,
-                                            "password": password]
-        alamoPost(with : params)
-        
+                                         "email": email,
+                                         "password": password]
+//        alamoResiterPost(with : params)
+        print(params)
+        print("Register Pressed")
     }
     
     
     
     //Make a post request and received the bearer token to login to dashboard
-    func alamoPost(with parameter: [String:Any]) {
+    func alamoResiterPost(with parameter: [String:Any]) {
         
         
         
     }
     
-    //Makes a request to gewt
-    func AlamogetDashboard(){
+    //MARK:- Makes a request to gewt
+    func AlamogetGetDashboard(with token: String )  {
+        let bearer = "Bearer " + token
+        let headers: HTTPHeaders = [
+            "Authorization": bearer,
+            "Accept": "application/json"
+        ]
+        
+        Alamofire.request( globalData.dashboardURL , method: .post, encoding: JSONEncoding.default, headers: headers)
+            .responseJSON { response in
+                if let data = response.data {
+                    do{
+                        let dashboardData = parseDashboard(with: data)
+                        self.instantiateDashboard(with: dashboardData)
+                        
+                    }
+                }
+        }
+        
         
     }
     
+    
+    func instantiateDashboard(with dashData: UserDashboard) {
+        
+        
+        
+    }
 }
+
+
