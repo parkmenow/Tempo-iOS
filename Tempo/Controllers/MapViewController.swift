@@ -17,10 +17,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     var ActivityIndicator: UIActivityIndicatorView!
     
     let locationManager = CLLocationManager()
-    
     var destinationCoordinate: GMSMarker!
     var mapView: GMSMapView!
     var riderID = 0
+    var taxiRouteLines = [GMSPolyline]()
+    var taxiID = 0
+    var selectedRouteID = 0
+    var fare = 0
+    var confirmButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -65,7 +69,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                     marker.icon = UIImage(named: "taxi")!.withRenderingMode(.alwaysTemplate)
                     marker.tracksViewChanges = true
                 }
-                
             } else {
                 print("bad json")
             }
@@ -115,16 +118,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             NSLog("Cancel Pressed")
             self.confirmButton.removeFromSuperview()
         }
-        
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
-        
         self.present(alertController, animated: true, completion: nil)
     }
-    
-    var selectedRouteID = 0
-    
-    
+
 //MARK:- Get Taxi
     func getRide(){
         let url = "https://tempobackend.herokuapp.com/api/v1/ride?routeid=\(self.selectedRouteID)"
@@ -145,7 +143,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             print(error)
         }
     }
-    var taxiID = 0
+
     func confirmTaxi(taxi: Dictionary<String,Any>) {
         OperationQueue.main.addOperation({
             self.confirmButton.removeFromSuperview()
@@ -202,18 +200,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             
             self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID),with: booki )
         }
-        
     }
 //MARK:- Call to Payment View Controller
     func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String, with booking: Booking ){
 
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
-        
         vc.user = user
         vc.taxi = taxi
         vc.cost = price
         vc.booking = booking
-        
         let date = Date()
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: date)
@@ -222,9 +217,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         vc.bookTime = time
             self.present(vc, animated: true, completion: nil)
     }
-    
-    var fare = 0
-    
+
     func getRouteResponseHandler (_ response_: String) -> Void{
         let response = "[" + response_ + "]"
         let data = response.data(using: .utf8)!
@@ -254,9 +247,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             print(error)
         }
     }
-    
-    var taxiRouteLines = [GMSPolyline]()
-    
+
     func plotRoute(route: String){
         OperationQueue.main.addOperation({
             let points = route
@@ -267,9 +258,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.taxiRouteLines.append(taxiRouteLine)
         })
     }
-    
-    var confirmButton: UIButton!
-    
+
     func getTestHandler (_ response: String) -> Void{
         print(response)
         DispatchQueue.main.async {
@@ -317,7 +306,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             if error != nil {
                 return
             }
-            
             let responseString : String = String(data: data!, encoding: String.Encoding.utf8)!
             successHandler(responseString)
         }
@@ -338,18 +326,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             if error != nil {
                 return
             }
-            
             let responseString : String = String(data: data!, encoding: String.Encoding.utf8)!
             successHandler(responseString)
         }
         task.resume();
     }
-    
-    func postUserLocations(){
-        
-        
-    }
-    
+
     func loadUserLocation(){
         let currentLoc = getUserLocation()
         let camera = GMSCameraPosition.camera(withLatitude: currentLoc.latitude, longitude: currentLoc.longitude, zoom: 13.0)

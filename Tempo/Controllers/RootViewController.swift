@@ -2,28 +2,29 @@
 //  RootViewController.swift
 //  Tempo
 //
-//  Created by bharath on 2019/02/22.
+//  Created by bharath on 2019/02/23.
 //  Copyright © 2019 shitian.ni. All rights reserved.
 //
 
-import Foundation
 import UIKit
-import SVProgressHUD
 
 class RootViewController: UIViewController {
-    
-    override func viewDidLoad() {
 
-        
+    override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+
+        // Do any additional setup after loading the view.
     }
-    @IBAction func loginPressed(_ sender: UIButton) {
-        print("Login Pressed")
-     
-        let vc = MapViewController(nibName: "MapViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+    
+    @IBAction func LoginPressed(_ sender: UIButton) {
+        
+//        performSegue(withIdentifier: "goToLogin", sender: self)
     }
+    
+    @IBAction func RegisterPressed(_ sender: UIButton) {
+//        performSegue(withIdentifier: "goToRegister", sender: self)
+    }
+    
 }
 
 extension UIViewController {
@@ -32,9 +33,7 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 }
-

@@ -2,4 +2,4 @@
 *.DS_Store
 Pods/
 *.lock
-Tempo/SupportingFiles/configTemplate.swift
+Tempo/SupportingFiles/globalData.swift
