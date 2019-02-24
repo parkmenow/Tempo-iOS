@@ -25,6 +25,7 @@ depends-top-level:
 - "UILabel"
 - "UISwitch"
 - "UIViewController"
+- !private "UnicodeScalarType"
 depends-member:
 - ["SK", "init"]
 - ["SK", "init"]

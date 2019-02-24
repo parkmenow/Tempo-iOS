@@ -232,19 +232,29 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="jqN-5d-dSl"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view_start" translatesAutoresizingMaskIntoConstraints="NO" id="2ml-8J-Esk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="499"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EGu-M2-exA" firstAttribute="top" secondItem="Y92-c3-Kl2" secondAttribute="bottom" id="A3h-25-SF4"/>
                             <constraint firstItem="EGu-M2-exA" firstAttribute="leading" secondItem="Ntn-pU-uNQ" secondAttribute="leading" id="NLg-tz-WZ1"/>
+                            <constraint firstItem="2ml-8J-Esk" firstAttribute="leading" secondItem="Ntn-pU-uNQ" secondAttribute="leading" id="ZaZ-rF-W3r"/>
                             <constraint firstItem="Y92-c3-Kl2" firstAttribute="leading" secondItem="Ntn-pU-uNQ" secondAttribute="leading" id="d2M-8Y-38z"/>
+                            <constraint firstItem="Y92-c3-Kl2" firstAttribute="top" secondItem="2ml-8J-Esk" secondAttribute="bottom" id="ess-ZV-M3e"/>
+                            <constraint firstItem="2ml-8J-Esk" firstAttribute="trailing" secondItem="Ntn-pU-uNQ" secondAttribute="trailing" id="fDx-N8-a8U"/>
                             <constraint firstItem="Y92-c3-Kl2" firstAttribute="trailing" secondItem="Ntn-pU-uNQ" secondAttribute="trailing" id="fuv-fA-plp"/>
+                            <constraint firstItem="2ml-8J-Esk" firstAttribute="top" secondItem="Ntn-pU-uNQ" secondAttribute="top" id="iUK-Nd-973"/>
                             <constraint firstItem="EGu-M2-exA" firstAttribute="trailing" secondItem="Ntn-pU-uNQ" secondAttribute="trailing" id="sMt-Qa-kn6"/>
                             <constraint firstItem="EGu-M2-exA" firstAttribute="bottom" secondItem="Ntn-pU-uNQ" secondAttribute="bottom" id="uXj-2J-c06"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ntn-pU-uNQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="U2O-wX-K4h"/>
+                    <connections>
+                        <outlet property="imageStart" destination="2ml-8J-Esk" id="P10-JX-W8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OR-h1-f7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,5 +281,6 @@
     </scenes>
     <resources>
         <image name="placeholder" width="1600" height="900"/>
+        <image name="view_start" width="156.5" height="156.5"/>
     </resources>
 </document>

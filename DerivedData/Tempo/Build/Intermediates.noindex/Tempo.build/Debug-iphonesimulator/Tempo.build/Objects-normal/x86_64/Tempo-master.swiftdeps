@@ -1,16 +1,16 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "91a67ad10cb2608efb981bc7eb9148b6"
-build_time: [1550901322, 632202000]
+options: "abeb21ea0f23a3db3c09b6c9318d3784"
+build_time: [1551003098, 459059000]
 inputs:
   "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/ViewController.swift": [1550816706, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/RegisterViewController.swift": [1550900964, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/RegisterViewController.swift": [1550921715, 0]
   "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Model/ParsingJSONs.swift": [1550894974, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/RootViewController.swift": [1550890260, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/RootViewController.swift": [1551003037, 0]
   "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/SupportingFiles/AppDelegate.swift": [1550901321, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Model/UserDashboard.swift": [1550894812, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Model/UserDashboard.swift": [1550983628, 0]
   "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Model/Car.swift": [1550811614, 0]
   "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Model/Booking.swift": [1550811682, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/LoginViewController.swift": [1550901141, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/SupportingFiles/globalData.swift": [1550893713, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/MapViewController.swift": [1550819748, 0]
-  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/PaymentViewController.swift": [1550817061, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/LoginViewController.swift": [1550985758, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/SupportingFiles/globalData.swift": [1550983866, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/MapViewController.swift": [1550984391, 0]
+  "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Tempo/Controllers/PaymentViewController.swift": [1550972454, 0]

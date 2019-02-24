@@ -10,6 +10,7 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+    @IBOutlet weak var imageStart: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

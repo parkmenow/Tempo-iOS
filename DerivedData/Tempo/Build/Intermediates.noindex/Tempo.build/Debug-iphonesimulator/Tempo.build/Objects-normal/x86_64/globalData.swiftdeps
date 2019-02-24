@@ -14,10 +14,11 @@ depends-top-level:
 - !private "..<"
 - "AssignmentPrecedence"
 - "Character"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "String"
 - "StringLiteralType"
+- "UserDashboard"
 - "globalData"
 depends-member:
 - !private ["SK", "String"]
@@ -222,6 +223,8 @@ depends-member:
 - ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "range"]
 - !private ["9Alamofire14URLConvertibleP", "subscript"]
+- ["5Tempo13UserDashboardV", "deinit"]
+- ["5Tempo13UserDashboardV", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "String"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "index"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -271,12 +274,17 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "range"]
 - !private ["s16_SwiftStringViewP", "subscript"]
 - ["5Tempo10globalDataO", "String"]
+- ["5Tempo10globalDataO", "UserDashboard"]
 - ["5Tempo10globalDataO", "authToken"]
 - ["5Tempo10globalDataO", "dashboardURL"]
 - ["5Tempo10globalDataO", "google_map_key"]
 - ["5Tempo10globalDataO", "loginURL"]
 - ["5Tempo10globalDataO", "paymentURL"]
 - ["5Tempo10globalDataO", "registerURL"]
+- ["5Tempo10globalDataO", "testURL"]
+- ["5Tempo10globalDataO", "user"]
+- ["5Tempo10globalDataO", "userName"]
+- ["5Tempo10globalDataO", "wallet"]
 depends-nominal:
 - "SK"
 - "s7CVarArgP"
@@ -315,6 +323,7 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "9Alamofire14URLConvertibleP"
+- "5Tempo13UserDashboardV"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -416,4 +425,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2db72216d1a102116e2f011a5834d63f"
+interface-hash: "ab9a4979839e59b68663ee06693bc450"

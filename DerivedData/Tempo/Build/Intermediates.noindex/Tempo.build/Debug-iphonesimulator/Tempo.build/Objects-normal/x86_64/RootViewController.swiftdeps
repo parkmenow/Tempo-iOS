@@ -12,12 +12,14 @@ provides-dynamic-lookup:
 - "LoginPressed"
 - "RegisterPressed"
 - "dismissKeyboard"
+- "imageStart"
 - "viewDidLoad"
 depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "RootViewController"
 - "UIButton"
+- "UIImageView"
 - !private "UITapGestureRecognizer"
 - "UIViewController"
 depends-member:
@@ -107,6 +109,7 @@ depends-member:
 - ["So8NSObjectC", "LoginPressed"]
 - ["So8NSObjectC", "RegisterPressed"]
 - ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UIImageView"]
 - !private ["So8NSObjectC", "UITapGestureRecognizer"]
 - !private ["So8NSObjectC", "UIViewController"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
@@ -114,6 +117,7 @@ depends-member:
 - ["So8NSObjectC", "dismissKeyboard"]
 - !private ["So8NSObjectC", "endEditing"]
 - ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
+- ["So8NSObjectC", "imageStart"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "view"]
@@ -134,6 +138,8 @@ depends-member:
 - ["5Tempo18RootViewControllerC", "LoginPressed"]
 - ["5Tempo18RootViewControllerC", "RegisterPressed"]
 - ["5Tempo18RootViewControllerC", "UIButton"]
+- ["5Tempo18RootViewControllerC", "UIImageView"]
+- ["5Tempo18RootViewControllerC", "imageStart"]
 - ["5Tempo18RootViewControllerC", "init"]
 - ["5Tempo18RootViewControllerC", "viewDidLoad"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
@@ -191,12 +197,14 @@ depends-member:
 - ["So11UIResponderC", "LoginPressed"]
 - ["So11UIResponderC", "RegisterPressed"]
 - ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UIImageView"]
 - !private ["So11UIResponderC", "UITapGestureRecognizer"]
 - !private ["So11UIResponderC", "UIViewController"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - ["So11UIResponderC", "dismissKeyboard"]
 - !private ["So11UIResponderC", "endEditing"]
 - ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
+- ["So11UIResponderC", "imageStart"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "view"]
@@ -246,11 +254,13 @@ depends-member:
 - ["So16UIViewControllerC", "LoginPressed"]
 - ["So16UIViewControllerC", "RegisterPressed"]
 - ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UIImageView"]
 - !private ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - !private ["So16UIViewControllerC", "UIViewController"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "dismissKeyboard"]
 - ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
+- ["So16UIViewControllerC", "imageStart"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "view"]
@@ -400,4 +410,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "daad9bcaedb6559ede35c9f15fa97163"
+interface-hash: "128b36af901c19da84440123aa08b1f1"

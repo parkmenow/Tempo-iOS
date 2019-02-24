@@ -14,7 +14,7 @@ class PaymentViewController: UIViewController {
         super.viewDidLoad()
         
         //Set GUI elements from passed data
-        self.userIdentifier.text = user
+        self.userIdentifier.text = globalData.user.Name
         self.taxiIdentifier.text = taxi
         self.payTime.text = bookTime
         self.costLabel.text = cost + "¥"
@@ -36,13 +36,11 @@ class PaymentViewController: UIViewController {
     
     @IBAction func payNowButtonPressed(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
         
-        if payByCard {
-            //Call stripe
-        } else {
-            //Pay by wallet
-        }
+        
+        
+        
+        self.dismiss(animated: true, completion: nil)
         
     }
     

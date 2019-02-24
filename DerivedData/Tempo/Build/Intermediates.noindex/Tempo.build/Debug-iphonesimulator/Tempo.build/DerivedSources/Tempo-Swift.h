@@ -193,12 +193,15 @@ SWIFT_CLASS("_TtC5Tempo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC5Tempo19LoginViewController")
 @interface LoginViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
 - (void)viewDidLoad;
 - (IBAction)loginPressed:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -241,10 +244,10 @@ SWIFT_CLASS("_TtC5Tempo21PaymentViewController")
 @end
 
 @class UIImageView;
-@class UITextField;
+@class UIImagePickerController;
 
 SWIFT_CLASS("_TtC5Tempo22RegisterViewController")
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImage;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified userName;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
@@ -253,6 +256,7 @@ SWIFT_CLASS("_TtC5Tempo22RegisterViewController")
 - (void)viewDidLoad;
 - (IBAction)addImage:(UIButton * _Nonnull)sender;
 - (IBAction)registerPressed:(UIButton * _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -260,6 +264,7 @@ SWIFT_CLASS("_TtC5Tempo22RegisterViewController")
 
 SWIFT_CLASS("_TtC5Tempo18RootViewController")
 @interface RootViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageStart;
 - (void)viewDidLoad;
 - (IBAction)LoginPressed:(UIButton * _Nonnull)sender;
 - (IBAction)RegisterPressed:(UIButton * _Nonnull)sender;

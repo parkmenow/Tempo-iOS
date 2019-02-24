@@ -137,6 +137,318 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Stripe/Stripe.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FauxPasAnnotations.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/FauxPasAnnotations.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPAPIClient+ApplePay.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPAPIClient+ApplePay.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPAPIClient.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPAPIClient.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPAPIResponseDecodable.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPAPIResponseDecodable.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPAddCardViewController.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPAddCardViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPAddress.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPAddress.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPApplePayPaymentMethod.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPApplePayPaymentMethod.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPBackendAPIAdapter.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPBackendAPIAdapter.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPBankAccount.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPBankAccount.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPBankAccountParams.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPBankAccountParams.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPBlocks.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPBlocks.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCard.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCard.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCardBrand.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCardBrand.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCardParams.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCardParams.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCardValidationState.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCardValidationState.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCardValidator.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCardValidator.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPConnectAccountParams.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPConnectAccountParams.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCoreScrollViewController.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCoreScrollViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCoreTableViewController.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCoreTableViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCoreViewController.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCoreViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCustomer.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCustomer.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPCustomerContext.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPCustomerContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPEphemeralKeyProvider.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPEphemeralKeyProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPFile.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPFile.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPFormEncodable.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPFormEncodable.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPImageLibrary.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPImageLibrary.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPLegalEntityParams.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPLegalEntityParams.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentActivityIndicatorView.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentActivityIndicatorView.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentCardTextField.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentCardTextField.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentConfiguration.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentContext.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentIntent.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentIntent.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentIntentEnums.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentIntentEnums.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentIntentParams.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentIntentParams.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentIntentSourceAction.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentIntentSourceAction.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentIntentSourceActionAuthorizeWithURL.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentIntentSourceActionAuthorizeWithURL.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentMethod.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentMethod.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentMethodsViewController.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentMethodsViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPPaymentResult.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPPaymentResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPRedirectContext.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPRedirectContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPShippingAddressViewController.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPShippingAddressViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSource.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceCardDetails.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceCardDetails.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceEnums.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceEnums.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceOwner.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceOwner.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceParams.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceParams.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceProtocol.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceReceiver.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceReceiver.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceRedirect.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceRedirect.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceSEPADebitDetails.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceSEPADebitDetails.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPSourceVerification.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPSourceVerification.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPTheme.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPToken.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPToken.h"
+        },
+        {
+          'type': 'file',
+          'name': "STPUserInformation.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/STPUserInformation.h"
+        },
+        {
+          'type': 'file',
+          'name': "Stripe-Swift.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Stripe/Stripe.framework/Headers/Stripe-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Stripe-umbrella.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Target Support Files/Stripe/Stripe-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Stripe.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/Stripe.h"
+        },
+        {
+          'type': 'file',
+          'name': "StripeError.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/StripeError.h"
+        },
+        {
+          'type': 'file',
+          'name': "UINavigationBar+Stripe_Theme.h",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/Pods/Stripe/Stripe/PublicHeaders/UINavigationBar+Stripe_Theme.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/Stripe/Stripe.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Stripe.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/bharath/Desktop/tempo-nksn/Tempo-iOS/DerivedData/Tempo/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers",
       'contents': [
         {
