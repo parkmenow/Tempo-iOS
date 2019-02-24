@@ -29,8 +29,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
+        
+        
         locationManagerInit()
         getNearbyTaxis()
+        setNavbar()
+        
+    }
+    
+    func setNavbar(){
+        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logoutUser))
+        self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
+        self.navigationItem.title = globalData.user.Name
     }
     
     
@@ -44,6 +56,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+        
+        
+        
+        
     }
     
     
@@ -430,6 +446,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         self.present(alertController, animated: true, completion: nil)
         
+    }
+    
+    
+    @objc func logoutUser(){
+        print("Logout clicked")
+        globalData.authToken = ""
+        globalData.user = UserDashboard()
+        self.navigationController?.viewControllers.removeLast(1)
     }
 }
 

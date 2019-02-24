@@ -14,12 +14,22 @@ class PaymentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Set GUI elements from passed data
-        self.userIdentifier.text = globalData.user.Name
-        self.taxiIdentifier.text = taxi
-        self.payTime.text = bookTime
-        self.costLabel.text = cost + "¥"
-        self.payMethodSwitch.isOn = payByCard
+        DispatchQueue.main.async {
+            
+            //Set GUI elements from passed data
+            self.userIdentifier.text = globalData.user.Name
+            self.taxiIdentifier.text = self.taxi
+            self.payTime.text = self.bookTime
+            self.costLabel.text = self.cost + "¥"
+            self.payMethodSwitch.isOn = self.payByCard
+        
+        
+        }
+        
+        //Add logout in bar
+        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logoutUser))
+        self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
+   
     }
     
     @IBOutlet weak var userIdentifier: UILabel!
@@ -89,6 +99,13 @@ class PaymentViewController: UIViewController {
             }}))
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    @objc func logoutUser(){
+        print("Logout clicked")
+        globalData.authToken = ""
+        globalData.user = UserDashboard()
+        self.navigationController?.viewControllers.removeLast(2)
     }
     
 }

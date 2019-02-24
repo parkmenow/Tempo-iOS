@@ -88,8 +88,6 @@ class LoginViewController: UIViewController {
     
     
     func instantiateDashboard(){
-        
-        
         let vc = MapViewController(nibName: "MapViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
