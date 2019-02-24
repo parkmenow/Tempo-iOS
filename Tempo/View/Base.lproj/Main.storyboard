@@ -21,8 +21,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-xa-781">
                                 <rect key="frame" x="87.5" y="80" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="ZFe-Cp-6LW"/>
-                                    <constraint firstAttribute="width" constant="200" id="h47-ih-Jwg"/>
+                                    <constraint firstAttribute="width" secondItem="TAM-xa-781" secondAttribute="height" multiplier="1:1" id="1Gt-l1-HWS"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="ZFe-Cp-6LW"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="h47-ih-Jwg"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Veu-RT-mrc">
@@ -66,11 +67,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRQ-TG-fFj">
-                                <rect key="frame" x="60" y="571.5" width="255" height="35.5"/>
+                                <rect key="frame" x="60" y="571.5" width="255" height="50"/>
                                 <color key="backgroundColor" red="0.37355126230000002" green="0.58271682499999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="vRQ-TG-fFj" secondAttribute="height" multiplier="36:5" id="SF6-i4-DKk"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Register">
@@ -111,7 +109,8 @@
                             <constraint firstItem="rVm-ao-aTi" firstAttribute="top" secondItem="Veu-RT-mrc" secondAttribute="bottom" constant="30" id="VUZ-vc-Ido"/>
                             <constraint firstItem="fou-is-nro" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="Z0O-Oe-gZ4"/>
                             <constraint firstItem="rVm-ao-aTi" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="ahs-4D-lBh"/>
-                            <constraint firstItem="gpT-5W-5Xs" firstAttribute="bottom" secondItem="vRQ-TG-fFj" secondAttribute="bottom" constant="60" id="lrp-er-R3m"/>
+                            <constraint firstItem="vRQ-TG-fFj" firstAttribute="top" secondItem="pKB-by-pu1" secondAttribute="bottom" constant="23.5" id="kWg-AM-rDq"/>
+                            <constraint firstItem="gpT-5W-5Xs" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="vRQ-TG-fFj" secondAttribute="bottom" constant="60" id="lrp-er-R3m"/>
                             <constraint firstItem="Veu-RT-mrc" firstAttribute="centerX" secondItem="wmN-IJ-L6L" secondAttribute="centerX" id="oCV-BQ-YKL"/>
                             <constraint firstItem="n90-bZ-mLT" firstAttribute="leading" secondItem="TAM-xa-781" secondAttribute="leading" id="ySr-sX-I6X"/>
                         </constraints>

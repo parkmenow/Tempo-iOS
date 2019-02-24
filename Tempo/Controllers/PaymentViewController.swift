@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class PaymentViewController: UIViewController {
 
@@ -62,6 +63,7 @@ class PaymentViewController: UIViewController {
     }
     
     func alamoPost(with parameters: [String:Any]){
+        SVProgressHUD.show(withStatus: "Sending payment Details")
         
         let bearer = "Bearer "+globalData.authToken
         
@@ -71,14 +73,14 @@ class PaymentViewController: UIViewController {
         ]
         Alamofire.request( globalData.paymentURL , method: .post, parameters: parameters, encoding: JSONEncoding.default, headers : header)
             .responseString { response in
-//                print("\(response.result.isSuccess)")
-//                print("\(response.result.value!)")
                 if response.result.isSuccess {
-                    
+                    self.createAlert(with: response.result.value!)
+                    SVProgressHUD.dismiss()
                 }
-                
-                self.createAlert(with: response.result.value!)
-//                self.dismiss(animated: true, completion: nil)
+                else {
+                    self.createAlert(with: "Payment Failed")
+                    SVProgressHUD.dismiss()
+                }
         }
     }
     

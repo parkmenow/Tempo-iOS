@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SVProgressHUD
 
 class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -53,47 +54,61 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
         let params : [ String : Any ] = ["name": username,
                                          "email": email,
                                          "password": password]
-//        alamoResiterPost(with : params)
         print(params)
         print("Register Pressed")
+        alamoResiterPost(with : params)
+
     }
-    
-    
-    
     //Make a post request and received the bearer token to login to dashboard
     func alamoResiterPost(with parameter: [String:Any]) {
         
-        
-        
+        let url = globalData.registerURL
+        SVProgressHUD.show(withStatus: "Sending details")
+        Alamofire.request( url , method: .post, parameters: parameter, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                if let data = response.data {
+                    do{
+                        let json = try JSON(data: data)
+                        globalData.authToken = json["token"].string!
+                        print("Set auth token")
+                        SVProgressHUD.dismiss()
+                        self.AlamogetGetDashboard()
+                    } catch{
+                        print("Server sent no data for login")
+                        SVProgressHUD.dismiss()
+                    }
+                }
+        }
     }
     
     //MARK:- Makes a request to gewt
-    func AlamogetGetDashboard(with token: String )  {
-        let bearer = "Bearer " + token
+    func AlamogetGetDashboard()  {
+        let bearer = "Bearer " + globalData.authToken
         let headers: HTTPHeaders = [
             "Authorization": bearer,
             "Accept": "application/json"
         ]
+        SVProgressHUD.show(withStatus: "Fetching Dash data")
         
         Alamofire.request( globalData.dashboardURL , method: .post, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 if let data = response.data {
                     do{
                         let dashboardData = parseDashboard(with: data)
+                        SVProgressHUD.dismiss()
                         self.instantiateDashboard(with: dashboardData)
-                        
                     }
                 }
+                else {
+                    SVProgressHUD.dismiss()
+                }
         }
-        
-        
     }
     
     
     func instantiateDashboard(with dashData: UserDashboard) {
-        
-        
-        
+        let vc = MapViewController(nibName: "MapViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

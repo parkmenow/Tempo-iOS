@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
     }
     
     func setTokenWithLogin(name: String, password : String){
-        
+        SVProgressHUD.show(withStatus: "Logging in..")
         let url = globalData.loginURL
         let params : [ String : Any] = ["u_name":name,
                                         "password":password
@@ -51,9 +51,11 @@ class LoginViewController: UIViewController {
                             let json = try JSON(data: data)
                             globalData.authToken = json["token"].string!
                             print("Set auth token")
+                            SVProgressHUD.dismiss()
                             self.getDashData()
                         } catch{
                             print("Server sent no data for login")
+                            SVProgressHUD.dismiss()
                         }
                     }
             }
@@ -69,19 +71,20 @@ class LoginViewController: UIViewController {
             "Authorization": bearer,
             "Accept": "application/json"
         ]
-        
+        SVProgressHUD.show(withStatus: "Fetching Dashboard")
         Alamofire.request( globalData.dashboardURL , method: .get , headers : header)
             .responseJSON { response in
                 if let data = response.data {
                     do{
-                        print("Got following data json from call to dashboard url")
-                        print(response.result.value!)
                         globalData.user  = parseDashboard(with: data)
                         print("After Parsing")
                         print(globalData.user)
-   
+                        SVProgressHUD.dismiss()
                         self.instantiateDashboard()
                     }
+                }
+                else {
+                    SVProgressHUD.dismiss()
                 }
         }
     }
