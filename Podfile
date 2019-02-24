@@ -12,5 +12,6 @@ target 'Tempo' do
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.8'
   pod 'SVProgressHUD'
+  pod 'Stripe'
 
 end

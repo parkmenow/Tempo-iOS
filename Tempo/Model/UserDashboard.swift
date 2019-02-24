@@ -9,14 +9,18 @@
 import Foundation
 
 struct UserDashboard: Codable {
-    var name : String
-    var wallet: Int
-    var imageURL : String
+    var Name : String
+    var Wallet: Int
+    var imageURL : String?
+    var Email : String
+    var Phone : String
     
     
     init(){
-        self.name = ""
-        self.wallet = 0
+        self.Name = ""
+        self.Wallet = 0
         self.imageURL = ""
+        self.Email = ""
+        self.Phone = ""
     }
 }

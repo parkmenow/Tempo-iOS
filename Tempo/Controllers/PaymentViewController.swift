@@ -17,7 +17,7 @@ class PaymentViewController: UIViewController {
         self.userIdentifier.text = user
         self.taxiIdentifier.text = taxi
         self.payTime.text = bookTime
-        self.costLabel.text = cost + ""
+        self.costLabel.text = cost + "¥"
         self.payMethodSwitch.isOn = payByCard
     }
     

@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var userName: UITextField!
@@ -24,14 +24,23 @@ class RegisterViewController: UIViewController {
     var password = ""
     var confirmedP = ""
     
+    let imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        
+        
         self.hideKeyboardWhenTappedAround()
         
         
     }
     @IBAction func addImage(_ sender: UIButton) {
         print("Add image Pressed")
+        present(imagePicker, animated: true, completion: nil)
         
     }
     
@@ -85,6 +94,12 @@ class RegisterViewController: UIViewController {
         
         
         
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let userPickeDImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        profileImage.image = userPickeDImage
+        imagePicker.dismiss(animated: true, completion: nil)
     }
 }
 

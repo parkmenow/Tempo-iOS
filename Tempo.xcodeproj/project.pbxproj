@@ -164,9 +164,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C5F870C221929D6000EA110 /* Build configuration list for PBXNativeTarget "Tempo" */;
 			buildPhases = (
+				C29DA3C08F47FB8F2878D683 /* [CP] Check Pods Manifest.lock */,
 				6C5F86F5221929D1000EA110 /* Resources */,
 				48263A45D370DE2151C02DAD /* [CP] Copy Pods Resources */,
-				C29DA3C08F47FB8F2878D683 /* [CP] Check Pods Manifest.lock */,
 				6C5F86F3221929D1000EA110 /* Sources */,
 				6C5F86F4221929D1000EA110 /* Frameworks */,
 				33C86236BA0C05A7B1979C0C /* [CP] Embed Pods Frameworks */,
@@ -242,6 +242,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -251,6 +252,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

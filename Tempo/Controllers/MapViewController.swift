@@ -68,6 +68,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                     marker.map = mapView
                     marker.icon = UIImage(named: "taxi")!.withRenderingMode(.alwaysTemplate)
                     marker.tracksViewChanges = true
+                    print("Added taxi")
                 }
             } else {
                 print("bad json")
@@ -149,7 +150,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.confirmButton.removeFromSuperview()
             self.confirmButton = UIButton()
             self.confirmButton.backgroundColor = UIColor.white
-            self.confirmButton.setTitle("taxi info:\n\(taxi) \n\n Tap to confirm taxi", for: [])
+            
+            var s: String = ""
+            
+            for (key,value) in taxi {
+                print("\(key) : \(value)")
+                s.append(contentsOf: "\(key) : \(value)\n")
+            }
+            
+            self.confirmButton.setTitle("taxi info:\n\(s) \n\n Tap to confirm taxi", for: [])
             self.taxiID = taxi["ID"] as! Int
             self.confirmButton.titleLabel!.lineBreakMode = .byWordWrapping
             // you probably want to center it
@@ -198,7 +207,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             print("Parsed json as : ")
             print(booki)
             
-            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(self.fare), taxiID: String(self.taxiID),with: booki )
+            let fareyen : Float = Float(self.fare) * 110.71
+            
+            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(fareyen*110.71), taxiID: String(self.taxiID),with: booki )
         }
     }
 //MARK:- Call to Payment View Controller

@@ -3,3 +3,4 @@
 Pods/
 *.lock
 Tempo/SupportingFiles/globalData.swift
+DerivedData/
