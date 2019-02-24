@@ -209,24 +209,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             
             let fareyen : Float = Float(self.fare) * 110.71
             
-            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: String(fareyen*110.71), taxiID: String(self.taxiID),with: booki )
+            self.callPaymentViewController(user: String(self.riderID), route: String(self.selectedRouteID), price: fareyen, taxiID: String(self.taxiID),with: booki )
         }
     }
 //MARK:- Call to Payment View Controller
-    func callPaymentViewController(user: String, route : String , price : String, taxiID taxi: String, with booking: Booking ){
+    func callPaymentViewController(user: String, route : String , price : Float, taxiID taxi: String, with booking: Booking ){
 
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
         vc.user = user
         vc.taxi = taxi
-        vc.cost = price
+        vc.cost = String(price)
         vc.booking = booking
+        vc.fare = price
         let date = Date()
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         let time = String(hour) + ":" + String(minutes)
         vc.bookTime = time
-            self.present(vc, animated: true, completion: nil)
+//            self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     func getRouteResponseHandler (_ response_: String) -> Void{
@@ -364,10 +366,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         loadUserLocation()
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
-    }
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+//        print("locations = \(locValue.latitude) \(locValue.longitude)")
+//    }
     
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
